@@ -1,0 +1,116 @@
+🌐 MURSEL VENTURES — WEBSITE STRUCTURE (ASAP VERSION)
+🏠 1. HOME (Landing Page)
+Goal: Explain + convert in 30 seconds
+Sections:
+
+Hero
+→ “We build, scale, and invest in the Blue Economy”
+→ CTA: Apply / Partner / Invest
+What We Do (4 pillars)
+Venture Studio
+Accelerator
+Consulting
+Fund
+Focus Areas (Blue Economy sectors)
+How It Works (simple 3–4 steps)
+For Who (Startups / Investors / Corporates)
+Featured Startups (even 1–2 placeholders)
+Partners / Logos
+Final CTA (Apply Now)
+🚀 2. VENTURE STUDIO
+Goal: Attract builders & explain model
+Sections:
+
+What is Venture Studio
+How we build startups
+Process (Idea → MVP → Scale)
+What founders get
+Equity model (keep simple)
+CTA: Build with us
+⚡ 3. ACCELERATOR
+Goal: Bring external startups
+Sections:
+
+Program overview (3–6 months)
+What you get (mentors, pilots, capital)
+Focus areas
+Timeline
+Alumni / sample startups
+CTA: Apply to program
+🏢 4. CONSULTING
+Goal: Monetization + corporate entry
+Sections:
+
+What we do (innovation, maritime, strategy)
+Who we work with
+Case examples (even conceptual)
+Industries (ports, logistics, gov)
+CTA: Book a call
+💰 5. FUND / INVEST
+Goal: Attract investors
+Sections:
+
+Investment thesis (Blue Economy)
+Stage (pre-seed, seed)
+What we invest in
+Portfolio (future-ready)
+For LPs / co-investors
+CTA: Partner with us
+🌊 6. FOCUS AREAS (IMPORTANT PAGE)
+Goal: Show clarity (very critical)
+Create sections like:
+
+Smart Ports
+Maritime Tech
+Ocean Sustainability
+Defense / Naval Tech
+Offshore Energy
+Logistics
+🤝 7. PARTNERS
+Goal: Build credibility
+Corporates
+Institutions
+Universities
+Governments
+👥 8. TEAM
+Keep it strong but simple
+Founders (you + Murat)
+Short bios
+Vision line
+🧠 9. INSIGHTS (BLOG)
+Goal: Authority + SEO**
+Blue Economy trends
+Maritime innovation
+Reports
+📥 10. APPLY (MOST IMPORTANT PAGE)
+Split into:
+Startup Application
+Partner Application
+Mentor Application
+👉 Multi-step form (don’t make it too long)
+📞 11. CONTACT
+Email
+Form
+Location (optional)
+⚡ SIMPLE NAVIGATION (TOP MENU)
+Home
+Studio
+Accelerator
+Consulting
+Invest
+Focus Areas
+Insights
+Apply
+🔥 MVP VERSION (IF YOU NEED SUPER FAST)
+If time is VERY limited, launch with just:
+Home
+Studio
+Accelerator
+Apply
+Contact
+👉 Then expand later
+🎯 CRITICAL RULES
+Keep it VERY clean (no clutter)
+Always have CTA visible
+Don’t over-explain → clarity > detail
+Show global ambition from day 1

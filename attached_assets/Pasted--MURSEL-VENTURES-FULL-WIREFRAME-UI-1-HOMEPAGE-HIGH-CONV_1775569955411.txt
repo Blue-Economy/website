@@ -1,0 +1,191 @@
+🧱 🌐 MURSEL VENTURES — FULL WIREFRAME UI
+🏠 1. HOMEPAGE (HIGH-CONVERSION LANDING)
+🔷 Section 1 — HERO
+Layout:
+Full-width background (ocean / tech visual)
+Center-left text
+Content:
+Headline:
+“We build, scale, and invest in the Blue Economy”
+Subtext:
+“Venture studio, accelerator, and capital for ocean innovation”
+Buttons:
+Primary: Apply Now
+Secondary: Partner With Us
+🔷 Section 2 — TRUST BAR
+Layout: Horizontal logos
+Content:
+
+“Backed by / Working with”
+(Add even placeholder logos if early)
+🔷 Section 3 — WHAT WE DO (4 PILLARS)
+Layout: 4 cards grid
+Each card:
+
+Icon
+Title
+1-line description
+Cards:
+Venture Studio → “We build startups from zero”
+Accelerator → “We scale high-potential founders”
+Consulting → “We solve industry challenges”
+Fund → “We invest in the future”
+🔷 Section 4 — HOW IT WORKS
+Layout: 3–4 steps (horizontal)
+Steps:
+
+Identify opportunities
+Build or select startups
+Validate with partners
+Scale with capital
+🔷 Section 5 — FOCUS AREAS
+Layout: Grid or horizontal scroll
+Items:
+
+Smart Ports
+Maritime Tech
+Ocean Sustainability
+Defense / Naval
+Offshore Energy
+Logistics
+🔷 Section 6 — FOR WHO
+Layout: 3 columns
+🚀 Startups → “Build or scale with us”
+💰 Investors → “Access curated deal flow”
+🏢 Corporates → “Innovate with speed”
+🔷 Section 7 — FEATURED STARTUPS
+Layout: Cards (even if placeholders)
+Logo
+One-line description
+🔷 Section 8 — FINAL CTA
+Big centered block:
+“Join the future of the Blue Economy”
+Buttons:
+Apply
+Partner
+Invest
+🚀 2. VENTURE STUDIO PAGE
+🔷 Section 1 — HERO
+“We build startups from zero”
+CTA: Build with us
+🔷 Section 2 — WHAT IS A VENTURE STUDIO
+Short explanation (keep simple)
+🔷 Section 3 — OUR PROCESS
+Vertical steps UI:
+Ideation
+Validation
+MVP
+Spin-out
+🔷 Section 4 — WHAT FOUNDERS GET
+Grid:
+Capital
+Team
+Network
+Infrastructure
+🔷 Section 5 — CTA
+“Start building with Mursel”
+⚡ 3. ACCELERATOR PAGE
+🔷 Section 1 — HERO
+“Scale your Blue Economy startup”
+🔷 Section 2 — PROGRAM OVERVIEW
+Duration
+Format
+Hybrid / remote
+🔷 Section 3 — WHAT YOU GET
+Grid:
+Mentors
+Pilots
+Investment
+Network
+🔷 Section 4 — TIMELINE
+Timeline UI:
+Apply → Selection → Program → Demo Day
+🔷 Section 5 — CTA
+Apply to Accelerator
+🏢 4. CONSULTING PAGE
+🔷 Section 1 — HERO
+“Innovation for maritime and beyond”
+🔷 Section 2 — SERVICES
+Grid:
+Innovation strategy
+Venture building
+Digital transformation
+Market entry
+🔷 Section 3 — INDUSTRIES
+Ports
+Logistics
+Government
+Defense
+🔷 Section 4 — CASES (even conceptual)
+🔷 Section 5 — CTA
+Book a Call
+💰 5. FUND / INVEST PAGE
+🔷 Section 1 — HERO
+“Investing in the future of the Blue Economy”
+🔷 Section 2 — INVESTMENT THESIS
+Blue Economy focus
+Early-stage
+Global ambition
+🔷 Section 3 — WHAT WE INVEST IN
+Maritime tech
+Climate ocean solutions
+Logistics innovation
+🔷 Section 4 — FOR INVESTORS
+Co-invest
+LP opportunities
+🔷 Section 5 — CTA
+Partner with us
+🌊 6. FOCUS AREAS PAGE
+🔷 Layout: Sections per vertical
+Each has:
+Title
+Description
+Example opportunities
+🤝 7. PARTNERS PAGE
+Sections:
+Corporate partners
+Institutional
+Academic
+👥 8. TEAM PAGE
+Layout:
+Founders (large cards)
+Short bios
+Vision quote
+🧠 9. INSIGHTS PAGE
+Layout:
+Blog cards
+Categories:
+Blue Economy
+Maritime Tech
+Reports
+📥 10. APPLY PAGE (CRITICAL)
+🔷 Tabs or sections:
+Startup
+Partner
+Mentor
+🔷 Form Structure:
+Step 1: Basic info
+Step 2: Details
+Step 3: Submit
+👉 Keep friction LOW
+
+📞 11. CONTACT PAGE
+Simple form
+Email
+Social links
+⚡ UX RULES (IMPORTANT)
+Sticky navbar
+CTA always visible
+Minimal text, strong headlines
+Dark + ocean-themed design
+Mobile-first
+🚀 FAST BUILD STACK
+If you’re moving ASAP:
+Webflow (best)
+or WordPress + Elementor
+Forms → Typeform / native
+🔥 NEXT STEP
+If you want, I can:
+👉 design exact homepage copy (ready to paste)
+👉 or create visual layout sketch (like Figma structure)
+👉 or define branding (colors, fonts, style)

@@ -1,0 +1,132 @@
+🌍 REMOTE MURSEL OPERATING SYSTEM
+🧠 CORE IDEA
+You are building:
+“A fully remote, globally distributed venture platform”
+So everything must be:
+async-friendly
+structured
+trackable
+🧩 1. REMOTE MENTORING SYSTEM
+🎯 Goal:
+Match mentors ↔ startups efficiently
+⚙️ Setup:
+Tools:
+HubSpot (CRM)
+Calendly (booking)
+Notion (mentor profiles)
+🔁 Flow:
+Mentor signs up → CRM
+Startup enters → CRM
+↓
+Match (manual or tagged)
+↓
+Call booked (Calendly)
+↓
+Session tracked (Notion/CRM)
+🧠 Smart Layer (later):
+Tag mentors by:
+Industry (maritime, AI, logistics)
+Stage (idea, scale)
+Auto-match suggestions
+🔎 2. SCOUTING SYSTEM (VERY IMPORTANT)
+🎯 Goal:
+Constant deal flow (this is your lifeblood)
+⚙️ Sources:
+LinkedIn
+Universities
+Hackathons
+Referrals
+Cold outreach
+🧩 Tools:
+Airtable or HubSpot pipeline
+🔁 Flow:
+Scout finds startup
+↓
+Adds to CRM (tag: “scouted”)
+↓
+Initial review
+↓
+Move to:
+- Studio
+- Accelerator
+- Reject
+🔥 Pro tip:
+Create Scout Network
+Give incentives (deal access, %)
+📥 3. CRM SYSTEM (YOUR CORE ENGINE)
+🎯 Must track EVERYTHING:
+Pipelines:
+🚀 Startups
+Applied
+Screening
+Interview
+Accepted
+In Program
+Invested
+💰 Investors
+Contacted
+Interested
+Active
+LP / Co-invest
+🤝 Partners
+Prospect
+Active
+Strategic
+👉 Tool:
+HubSpot (best choice for you now)
+🧠 4. MANAGEMENT SYSTEM (INTERNAL OPS)
+🎯 Run the company remotely
+⚙️ Tools:
+Notion → brain
+Slack → communication
+Google Drive → docs
+🧩 Notion Structure:
+Workspaces:
+Deal Flow
+Portfolio
+Studio Projects
+Accelerator Cohorts
+Tasks / OKRs
+🔁 Weekly Flow:
+Monday → pipeline review
+Midweek → execution
+Friday → reporting
+⚙️ 5. REMOTE EXECUTION (STUDIO + ACCELERATOR)
+Studio:
+Build startups async
+Use:
+Notion (tasks)
+Slack (team)
+GitHub (tech)
+Accelerator:
+Weekly calls (Zoom)
+Mentor sessions
+Demo day (remote or hybrid)
+🔗 6. FULL SYSTEM FLOW (IMPORTANT)
+SCOUTING → CRM → DECISION → PROGRAM → MENTORING → INVESTMENT
+🔥 CRITICAL SUCCESS FACTORS
+1. CRM discipline
+If CRM is messy → system collapses
+2. Clear pipelines
+Everyone must know:
+👉 where things are
+3. Async culture
+No chaos, no WhatsApp-only ops
+4. Speed
+Fast decisions = competitive edge
+⚡ MINIMAL STACK (START TOMORROW)
+You only need:
+HubSpot → CRM
+Notion → operations
+Slack → comms
+Calendly → scheduling
+Webflow → site
+👉 That’s enough to run globally
+🧠 FINAL INSIGHT
+If you build this right:
+👉 You are NOT a local venture firm
+👉 You are a global remote venture machine
+
+If you want next:
+👉 I can design exact HubSpot pipeline (fields, tags, automations)
+👉 or Notion template (ready to copy)

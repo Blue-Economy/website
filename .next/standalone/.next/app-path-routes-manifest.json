@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/accelerator/page": "/accelerator",
+  "/api/contact/route": "/api/contact",
+  "/apply/page": "/apply",
+  "/consulting/page": "/consulting",
+  "/contact/page": "/contact",
+  "/focus-areas/page": "/focus-areas",
+  "/insights/page": "/insights",
+  "/invest/page": "/invest",
+  "/page": "/",
+  "/studio/page": "/studio",
+  "/team/page": "/team"
+}
