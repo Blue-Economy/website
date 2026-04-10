@@ -1,0 +1,54 @@
+- name: "Ilkay Aydin"
+  title: "Maritime Strategy Expert"
+  expertise:
+    - Strategic Planning
+    - Turkey Market
+    - Regulatory
+  bio: "20+ years in maritime strategy and business development across Turkey and EMEA."
+  linkedin: "https://linkedin.com/in/ilkayaydin"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Sena Nomak"
+  title: "Founder, YKSN | Marine Engineer"
+  expertise:
+    - Marine Engineering
+    - Startup Founding
+    - Women in Tech
+  bio: "Marine engineer and founder of YKSN, focused on sustainable maritime solutions."
+  linkedin: "https://linkedin.com/in/senanomak"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Kadir Demir"
+  title: "Founder, Viya LLC | Germany"
+  expertise:
+    - International Expansion
+    - B2B Sales
+    - European Market
+  bio: "Serial entrepreneur helping Turkish startups scale in European markets."
+  linkedin: "https://linkedin.com/in/kadir-demir-a159ba87"
+  availability: "Monthly"
+  languages: ["TR", "EN", "DE"]
+
+- name: "Prof. Dr. Capt. Taner Albayrak"
+  title: "Maritime Academic & Industry Leader"
+  expertise:
+    - Naval Architecture
+    - Maritime Education
+    - Safety Standards
+  bio: "Professor and captain with deep expertise in maritime education and regulatory frameworks."
+  linkedin: "https://linkedin.com/in/prof-dr-capt-taner-albayrak-33348322"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Dr. Tahir Conka"
+  title: "Business Development, DEARSAN"
+  expertise:
+    - Defense Maritime
+    - Business Development
+    - Government Relations
+  bio: "Leading business development for defense maritime projects with global partnerships."
+  linkedin: "https://linkedin.com/in/tahirconka"
+  availability: "Monthly"
+  languages: ["TR", "EN"]

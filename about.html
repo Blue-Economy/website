@@ -1,0 +1,156 @@
+---
+layout: default
+title: About
+description: "Learn about Mursel Ventures' mission, the Blue Economy opportunity, and the team behind Turkey's premier maritime venture building ecosystem."
+permalink: /about/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Story</span>
+    <h1>From First Admiral to Future Oceans</h1>
+    <p class="page-subtitle">Named after Kara Mursel Alp, the first Ottoman Admiral, we carry forward a 700-year legacy of maritime leadership.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="grid-2" style="align-items: center;">
+      <div>
+        <span class="section-label">Why Mursel?</span>
+        <h2>A Legacy of Maritime Vision</h2>
+        <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">In the early 14th century, Kara Mursel Alp established the foundations of Ottoman naval power. His strategic vision transformed a regional force into a Mediterranean powerhouse.</p>
+        <p style="color: var(--text-secondary); line-height: 1.8;">At Mursel Ventures, we believe that same strategic thinking is needed today -- not for conquest, but for sustainable ocean innovation. We exist to connect visionary entrepreneurs with the capital, expertise, and networks they need to turn ocean challenges into global opportunities.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>1300s</h4>
+          <p>Kara Mursel Alp establishes Ottoman naval power as the first Kaptan-i Derya (Admiral)</p>
+        </div>
+        <div class="timeline-item">
+          <h4>700 Years of Maritime Heritage</h4>
+          <p>Turkey develops deep maritime expertise spanning three seas and centuries of trade</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Today</h4>
+          <p>Mursel Ventures channels that spirit into building the next generation of Blue Economy innovators</p>
+        </div>
+        <div class="timeline-item">
+          <h4>The Future</h4>
+          <p>A global BlueTech ecosystem driving sustainable ocean innovation from Turkey to the world</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Opportunity</span>
+      <h2 class="section-title">Why Blue Economy?</h2>
+      <p class="section-desc">The sustainable use of ocean resources for economic growth, improved livelihoods, and jobs while preserving ocean ecosystem health.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">$1.5T</div>
+        <div class="stat-label">Annual Global Impact</div>
+        <div class="stat-source">World Bank</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">$159B</div>
+        <div class="stat-label">Digital Maritime Market</div>
+        <div class="stat-source">PortTechnology</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">3 Seas</div>
+        <div class="stat-label">Turkey's Strategic Position</div>
+        <div class="stat-source">Geographic advantage</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">SDG 14</div>
+        <div class="stat-label">Life Below Water</div>
+        <div class="stat-source">UN Sustainable Development</div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.8;">Turkey, with its unique geographic position spanning three seas and centuries of maritime heritage, is poised to lead this transformation. The Blue Economy represents one of the greatest economic and environmental opportunities of our generation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Purpose</span>
+      <h2 class="section-title">Mission & Vision</h2>
+    </div>
+    <div class="grid-2">
+      <div class="card" style="border-left: 3px solid var(--ocean-accent);">
+        <h3>Mission</h3>
+        <p style="font-size: 1.1rem; line-height: 1.7;">"Future is what we make it. Making it better by supporting BlueTech ventures that focus on human, environmental, and business success."</p>
+      </div>
+      <div class="card" style="border-left: 3px solid var(--success-coral);">
+        <h3>Vision</h3>
+        <p style="font-size: 1.1rem; line-height: 1.7;">"Make the challenge an opportunity for entrepreneurs."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Leadership</span>
+      <h2 class="section-title">Meet the Founders</h2>
+    </div>
+    <div class="founder-grid">
+      {% for founder in site.data.team.founders %}
+      <div class="founder-card">
+        <div class="founder-avatar">{{ founder.name | split: ' ' | first | slice: 0 }}{{ founder.name | split: ' ' | last | slice: 0 }}</div>
+        <h3>{{ founder.name }}</h3>
+        <div class="founder-role">{{ founder.role }}</div>
+        <p class="founder-bio">{{ founder.bio }}</p>
+        <div class="founder-social">
+          {% if founder.linkedin %}<a href="{{ founder.linkedin }}" target="_blank" rel="noopener">{% include icons.html name="linkedin" size=18 %} LinkedIn</a>{% endif %}
+          {% if founder.twitter %}<a href="{{ founder.twitter }}" target="_blank" rel="noopener">{% include icons.html name="twitter" size=18 %} Twitter</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <p style="font-style: italic; font-size: 1.05rem; line-height: 1.7;">"We started Mursel because we believe Turkey's maritime heritage, combined with modern venture building practices, can unlock incredible value in the Blue Economy -- for entrepreneurs, investors, and the planet."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What Drives Us</span>
+      <h2 class="section-title">Core Values</h2>
+    </div>
+    <div class="values-grid">
+      {% for value in site.data.team.values %}
+      <div class="value-card">
+        <div class="value-icon">{% include icons.html name=value.icon size=28 %}</div>
+        <h4>{{ value.title }}</h4>
+        <p>{{ value.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Join Our Team</h2>
+    <p>We're building the future of the Blue Economy and looking for passionate people to join us.</p>
+    <div class="cta-actions">
+      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Apply to Mursel</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline btn-lg">Get in Touch</a>
+    </div>
+  </div>
+</section>

@@ -1,22 +1,101 @@
-{% comment %} Apply the class `overflow-hidden` to the body element to prevent
-scrolling when a modal is visible. This is useful when you want to ensure that the
-user can't scroll away from the modal. {% endcomment %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags-->
-  {% include core/head/meta-seo-tags.html %}
-  {% include core/head/meta-og-tags.html %}
-  <!-- Stylesheets-->
-  {% include core/styles/styles.html %}
-  <!-- Google Analytics-->
-  {% include utilities/analytics.html %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+  {% feed_meta %}
 </head>
-<body {% if page.overflow %} class="overflow-hidden" {% endif %}>
-  <div class="content-wrapper">
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="{{ '/' | relative_url }}" class="logo">
+        <span class="logo-text">MURSEL</span>
+        <span class="logo-sub">VENTURES</span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          {% for item in site.data.navigation %}
+          <li class="nav-item {% if item.children %}has-dropdown{% endif %}">
+            <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
+            {% if item.children %}
+            <ul class="dropdown">
+              {% for child in item.children %}
+              <li><a href="{{ child.url | relative_url }}" class="dropdown-link">{{ child.title }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent nav-cta">Apply Now</a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+        <span class="toggle-open">{% include icons.html name="menu" %}</span>
+        <span class="toggle-close">{% include icons.html name="close" %}</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
     {{ content }}
-  </div>
-  <!-- Site Scripts-->
-  {% include core/scripts/scripts.html %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="{{ '/' | relative_url }}" class="logo">
+            <span class="logo-text">MURSEL</span>
+            <span class="logo-sub">VENTURES</span>
+          </a>
+          <p class="footer-tagline">Building the future of the Blue Economy. Named after Kara Mursel Alp, the first Ottoman Admiral.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/murselventures" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icons.html name="linkedin" %}</a>
+            <a href="https://twitter.com/murselventures" target="_blank" rel="noopener" aria-label="Twitter">{% include icons.html name="twitter" %}</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="{{ '/programs/studio/' | relative_url }}">Venture Studio</a></li>
+            <li><a href="{{ '/programs/accelerator/' | relative_url }}">Accelerator</a></li>
+            <li><a href="{{ '/programs/consulting/' | relative_url }}">Consulting</a></li>
+            <li><a href="{{ '/programs/fund/' | relative_url }}">Fund</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+            <li><a href="{{ '/ecosystem/mentors/' | relative_url }}">Mentors</a></li>
+            <li><a href="{{ '/ecosystem/partners/' | relative_url }}">Partners</a></li>
+            <li><a href="{{ '/insights/' | relative_url }}">Insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="{{ '/apply/' | relative_url }}">Apply Now</a></li>
+            <li><a href="{{ '/contact/' | relative_url }}">Contact Us</a></li>
+            <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
+            <li><a href="{{ '/terms/' | relative_url }}">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mursel Ventures. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

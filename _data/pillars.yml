@@ -1,0 +1,23 @@
+- title: Venture Studio
+  icon: anchor
+  description: "We build BlueTech companies from the ground up. In-house expertise, co-founding, and resources from idea to MVP."
+  stage: "Idea to MVP"
+  url: /programs/studio/
+
+- title: Accelerator
+  icon: rocket
+  description: "3-month intensive program scaling existing BlueTech startups through mentorship, pilot access, and funding readiness."
+  stage: "MVP to Revenue"
+  url: /programs/accelerator/
+
+- title: Consulting
+  icon: compass
+  description: "Strategic advisory for maritime stakeholders. Market entry, innovation strategy, and partnership facilitation."
+  stage: "Any Stage"
+  url: /programs/consulting/
+
+- title: Fund
+  icon: chart
+  description: "Early-stage investment in Blue Economy ventures. Capital combined with strategic support and network access."
+  stage: "Seed to Series A"
+  url: /programs/fund/

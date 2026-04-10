@@ -1,0 +1,29 @@
+founders:
+  - name: "Nuri Murat Avci"
+    role: "Co-Founder"
+    bio: "Visionary entrepreneur with deep expertise in maritime business development and venture building. Passionate about channeling Turkey's maritime heritage into sustainable ocean innovation."
+    linkedin: "https://www.linkedin.com/in/nurimuratavci/"
+    twitter: "https://twitter.com/nurimuratavci"
+
+  - name: "Selcuk Ergin"
+    role: "Co-Founder"
+    bio: "Seasoned strategist bridging maritime industry knowledge with modern venture capital. Focused on building scalable BlueTech ventures that deliver environmental, social, and business impact."
+    linkedin: "https://www.linkedin.com/in/selcukergin/"
+    twitter: "https://twitter.com/selcuke"
+
+values:
+  - title: Sustainability
+    description: "Every venture we support must create positive environmental impact alongside financial returns."
+    icon: leaf
+
+  - title: Innovation
+    description: "We embrace cutting-edge technology to solve age-old maritime challenges in new ways."
+    icon: lightbulb
+
+  - title: Collaboration
+    description: "Our strength lies in connecting visionary founders with the right mentors, partners, and capital."
+    icon: handshake
+
+  - title: Impact
+    description: "We measure success not just in returns, but in real-world outcomes for oceans and communities."
+    icon: globe

@@ -1,0 +1,245 @@
+---
+layout: default
+title: Apply
+description: "Apply to Mursel Ventures as a startup, investor, mentor, or partner."
+permalink: /apply/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Join Mursel</span>
+    <h1>Start Your Application</h1>
+    <p class="page-subtitle">Select your path and tell us about yourself. We review every application carefully.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container" style="max-width: 800px;">
+    <div class="form-tabs">
+      <button class="form-tab active" data-tab="tab-startup">For Startups</button>
+      <button class="form-tab" data-tab="tab-investor">For Investors</button>
+      <button class="form-tab" data-tab="tab-mentor">For Mentors</button>
+      <button class="form-tab" data-tab="tab-partner">For Partners</button>
+    </div>
+
+    <div id="tab-startup" class="tab-panel active" style="display: block;">
+      <div class="card">
+        <h3 style="margin-bottom: 0.5rem;">Startup Application</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Apply to our Venture Studio or Accelerator program.</p>
+
+        <div class="step-indicator">
+          <span class="step-dot active"></span>
+          <span class="step-dot"></span>
+          <span class="step-dot"></span>
+        </div>
+
+        <form action="mailto:info@murselventures.com" method="POST" enctype="text/plain">
+          <div class="form-step active" style="display: block;">
+            <h4 style="margin-bottom: 1.5rem; color: var(--ocean-accent);">Step 1: Basic Information</h4>
+            <div class="form-group">
+              <label class="form-label">Company Name</label>
+              <input type="text" class="form-input" name="company" placeholder="Your company name (if applicable)">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Founder Name(s) *</label>
+              <input type="text" class="form-input" name="founders" placeholder="Full name(s)" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-input" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">LinkedIn Profile *</label>
+              <input type="url" class="form-input" name="linkedin" placeholder="https://linkedin.com/in/...">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Location</label>
+              <input type="text" class="form-input" name="location" placeholder="City, Country">
+            </div>
+            <div class="form-nav">
+              <div></div>
+              <button type="button" class="btn btn-accent" data-step-next="1">Next Step</button>
+            </div>
+          </div>
+
+          <div class="form-step">
+            <h4 style="margin-bottom: 1.5rem; color: var(--ocean-accent);">Step 2: Problem & Solution</h4>
+            <div class="form-group">
+              <label class="form-label">What ocean/maritime problem are you solving? *</label>
+              <textarea class="form-textarea" name="problem" placeholder="Describe the problem..." required></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Describe your solution in one sentence *</label>
+              <input type="text" class="form-input" name="solution" placeholder="We help [who] do [what] by [how]">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Current Stage *</label>
+              <select class="form-select" name="stage">
+                <option value="">Select stage...</option>
+                <option value="idea">Idea</option>
+                <option value="prototype">Prototype</option>
+                <option value="mvp">MVP</option>
+                <option value="revenue">Revenue</option>
+                <option value="scaling">Scaling</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Program</label>
+              <select class="form-select" name="program">
+                <option value="">Select program...</option>
+                <option value="studio">Venture Studio</option>
+                <option value="accelerator">Accelerator</option>
+                <option value="both">Both / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline" data-step-prev="0">Back</button>
+              <button type="button" class="btn btn-accent" data-step-next="2">Next Step</button>
+            </div>
+          </div>
+
+          <div class="form-step">
+            <h4 style="margin-bottom: 1.5rem; color: var(--ocean-accent);">Step 3: Mursel Fit</h4>
+            <div class="form-group">
+              <label class="form-label">Why Blue Economy? Why now?</label>
+              <textarea class="form-textarea" name="why" placeholder="Tell us what drives your focus on ocean innovation..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">What do you need most from Mursel?</label>
+              <textarea class="form-textarea" name="needs" placeholder="Funding, mentorship, pilot access, network, product support..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Additional Comments</label>
+              <textarea class="form-textarea" name="comments" placeholder="Anything else you'd like us to know..."></textarea>
+            </div>
+            <div class="form-nav">
+              <button type="button" class="btn btn-outline" data-step-prev="1">Back</button>
+              <button type="submit" class="btn btn-accent">Submit Application</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="tab-investor" class="tab-panel" style="display: none;">
+      <div class="card">
+        <h3 style="margin-bottom: 0.5rem;">Investor Inquiry</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Explore fund opportunities or co-investment in BlueTech ventures.</p>
+        <form action="mailto:info@murselventures.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label class="form-label">Organization Name *</label>
+            <input type="text" class="form-input" name="org" placeholder="Your organization" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Organization Type *</label>
+            <select class="form-select" name="type">
+              <option value="">Select type...</option>
+              <option value="vc">Venture Capital</option>
+              <option value="family">Family Office</option>
+              <option value="corporate">Corporate VC</option>
+              <option value="angel">Angel / Individual</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Person *</label>
+            <input type="text" class="form-input" name="contact" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-input" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">LinkedIn</label>
+            <input type="url" class="form-input" name="linkedin" placeholder="https://linkedin.com/in/...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Why Blue Economy?</label>
+            <textarea class="form-textarea" name="why" placeholder="Tell us about your interest in the Blue Economy..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="tab-mentor" class="tab-panel" style="display: none;">
+      <div class="card">
+        <h3 style="margin-bottom: 0.5rem;">Mentor Application</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Join our expert mentor network and guide BlueTech founders.</p>
+        <form action="mailto:info@murselventures.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" class="form-input" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Current Role / Organization *</label>
+            <input type="text" class="form-input" name="role" placeholder="Title at Organization" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-input" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">LinkedIn *</label>
+            <input type="url" class="form-input" name="linkedin" placeholder="https://linkedin.com/in/..." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Areas of Expertise *</label>
+            <input type="text" class="form-input" name="expertise" placeholder="e.g., Naval Architecture, AI/ML, Marine Engineering...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Availability</label>
+            <select class="form-select" name="availability">
+              <option value="">Select availability...</option>
+              <option value="monthly">Monthly (4+ hours/month)</option>
+              <option value="quarterly">Quarterly (as needed)</option>
+              <option value="adhoc">Ad-hoc (project-based)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Why join Mursel's mentor network?</label>
+            <textarea class="form-textarea" name="motivation" placeholder="Tell us about your motivation..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="tab-partner" class="tab-panel" style="display: none;">
+      <div class="card">
+        <h3 style="margin-bottom: 0.5rem;">Partnership Inquiry</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Collaborate with Mursel Ventures on Blue Economy initiatives.</p>
+        <form action="mailto:info@murselventures.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label class="form-label">Organization Name *</label>
+            <input type="text" class="form-input" name="org" placeholder="Your organization" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Contact Person *</label>
+            <input type="text" class="form-input" name="contact" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-input" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Partnership Interest</label>
+            <select class="form-select" name="interest">
+              <option value="">Select area...</option>
+              <option value="academic">Academic Collaboration</option>
+              <option value="corporate">Corporate Partnership</option>
+              <option value="institutional">Institutional Cooperation</option>
+              <option value="ecosystem">Ecosystem Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">How would you like to collaborate?</label>
+            <textarea class="form-textarea" name="collaboration" placeholder="Describe potential collaboration areas..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

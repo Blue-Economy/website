@@ -1,0 +1,82 @@
+---
+layout: default
+title: Partners
+description: "Our network of academic, institutional, corporate, and ecosystem partners driving Blue Economy innovation."
+permalink: /ecosystem/partners/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Ecosystem</span>
+    <h1>Partners</h1>
+    <p class="page-subtitle">Collaborating with leading institutions, corporations, and organizations to build the Blue Economy.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="partner-category">
+      <h3><span class="partner-category-icon">{% include icons.html name="graduation" size=24 %}</span> Academic Institutions</h3>
+      <div class="partner-grid">
+        {% for partner in site.data.partners.academic %}
+        <div class="partner-card">
+          <h4>{{ partner.name }}</h4>
+          <div class="partner-fullname">{{ partner.full_name }}</div>
+          <p>{{ partner.description }}</p>
+          <div class="partner-meta">{{ partner.location }}{% if partner.website %} &middot; <a href="{{ partner.website }}" target="_blank" rel="noopener">Website</a>{% endif %}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="partner-category">
+      <h3><span class="partner-category-icon">{% include icons.html name="building" size=24 %}</span> Institutional Organizations</h3>
+      <div class="partner-grid">
+        {% for partner in site.data.partners.institutional %}
+        <div class="partner-card">
+          <h4>{{ partner.name }}</h4>
+          <div class="partner-fullname">{{ partner.full_name }}</div>
+          <p>{{ partner.description }}</p>
+          <div class="partner-meta">{{ partner.location }}{% if partner.website %} &middot; <a href="{{ partner.website }}" target="_blank" rel="noopener">Website</a>{% endif %}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="partner-category">
+      <h3><span class="partner-category-icon">{% include icons.html name="anchor" size=24 %}</span> Corporate Partners</h3>
+      <div class="partner-grid">
+        {% for partner in site.data.partners.corporate %}
+        <div class="partner-card">
+          <h4>{{ partner.name }}</h4>
+          <div class="partner-fullname">{{ partner.full_name }}</div>
+          <p>{{ partner.description }}</p>
+          <div class="partner-meta">{{ partner.location }}{% if partner.website %} &middot; <a href="{{ partner.website }}" target="_blank" rel="noopener">Website</a>{% endif %}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="partner-category">
+      <h3><span class="partner-category-icon">{% include icons.html name="globe" size=24 %}</span> Ecosystem Partners</h3>
+      <div class="partner-grid">
+        {% for partner in site.data.partners.ecosystem %}
+        <div class="partner-card">
+          <h4>{{ partner.name }}</h4>
+          <div class="partner-fullname">{{ partner.full_name }}</div>
+          <p>{{ partner.description }}</p>
+          <div class="partner-meta">{{ partner.location }}{% if partner.website %} &middot; <a href="{{ partner.website }}" target="_blank" rel="noopener">Website</a>{% endif %}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Partner with Mursel</h2>
+    <p>Whether you're an academic institution, corporation, or organization, let's explore how we can collaborate.</p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent btn-lg">Explore Collaboration</a>
+  </div>
+</section>

@@ -1,0 +1,97 @@
+---
+layout: default
+title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
+---
+
+<section class="hero">
+  <div class="container">
+    <span class="hero-label">Capital &middot; Venture Building &middot; Consulting</span>
+    <h1>Building the Future of the Blue Economy</h1>
+    <p class="hero-subtitle">Named after Kara Mursel Alp, the first Ottoman Admiral, Mursel Ventures carries forward a 700-year legacy of maritime leadership into sustainable ocean innovation.</p>
+    <div class="hero-actions">
+      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Apply Now</a>
+      <a href="{{ '/about/' | relative_url }}" class="btn btn-outline btn-lg">Learn About Blue Economy</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Four Pillars of Ocean Innovation</h2>
+      <p class="section-desc">An integrated ecosystem connecting visionary entrepreneurs with capital, expertise, and networks to turn ocean challenges into global opportunities.</p>
+    </div>
+    <div class="grid-4">
+      {% for pillar in site.data.pillars %}
+      <div class="card">
+        <div class="card-icon">{% include icons.html name=pillar.icon size=28 %}</div>
+        <h3>{{ pillar.title }}</h3>
+        <p>{{ pillar.description }}</p>
+        <span class="card-tag">{{ pillar.stage }}</span>
+        <a href="{{ pillar.url | relative_url }}" class="card-link">Learn More {% include icons.html name="arrow-right" size=16 %}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Blue Economy Impact</span>
+      <h2 class="section-title">The Opportunity is Immense</h2>
+    </div>
+    <div class="stats-grid">
+      {% for stat in site.data.stats %}
+      <div class="stat-item">
+        <div class="stat-number">{{ stat.number }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
+        <div class="stat-source">{{ stat.source | default: stat.detail }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Our Network</span>
+      <h2 class="section-title">Expert Mentors Driving Impact</h2>
+      <p class="section-desc">World-class maritime and technology experts guiding the next generation of BlueTech founders.</p>
+    </div>
+    <div class="grid-3">
+      {% for mentor in site.data.mentors limit:3 %}
+      <div class="mentor-card">
+        <div class="mentor-avatar">{{ mentor.name | split: ' ' | first | slice: 0 }}{{ mentor.name | split: ' ' | last | slice: 0 }}</div>
+        <h3>{{ mentor.name }}</h3>
+        <div class="mentor-title">{{ mentor.title }}</div>
+        <p class="mentor-bio">{{ mentor.bio }}</p>
+        <div class="mentor-tags">
+          {% for tag in mentor.expertise %}
+          <span class="mentor-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="mentor-social">
+          {% if mentor.linkedin %}<a href="{{ mentor.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icons.html name="linkedin" size=18 %}</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div style="text-align: center; margin-top: 2.5rem;">
+      <a href="{{ '/ecosystem/mentors/' | relative_url }}" class="btn btn-outline">View All Mentors</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Build the Future of the Oceans?</h2>
+    <p>Whether you're a founder, investor, mentor, or partner, there's a place for you in the Mursel ecosystem.</p>
+    <div class="cta-actions">
+      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Start Your Application</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline btn-lg">Get in Touch</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,98 @@
+---
+layout: default
+title: Programs
+description: "Explore Mursel Ventures' four integrated pillars: Venture Studio, Accelerator, Consulting, and Fund."
+permalink: /programs/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Programs</span>
+    <h1>Four Ways We Build the Blue Economy</h1>
+    <p class="page-subtitle">An integrated ecosystem designed to support BlueTech ventures at every stage of growth.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="grid-2">
+      {% for pillar in site.data.pillars %}
+      <div class="card">
+        <div class="card-icon">{% include icons.html name=pillar.icon size=28 %}</div>
+        <h3>{{ pillar.title }}</h3>
+        <p>{{ pillar.description }}</p>
+        <span class="card-tag">{{ pillar.stage }}</span>
+        <a href="{{ pillar.url | relative_url }}" class="card-link">Explore Program {% include icons.html name="arrow-right" size=16 %}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Compare Programs</span>
+      <h2 class="section-title">Which Program is Right for You?</h2>
+    </div>
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Venture Studio</th>
+          <th>Accelerator</th>
+          <th>Consulting</th>
+          <th>Fund</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Target Stage</td>
+          <td>Idea to MVP</td>
+          <td>MVP to Revenue</td>
+          <td>Any Stage</td>
+          <td>Seed to Series A</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td>12-18 months</td>
+          <td>3 months + alumni</td>
+          <td>Project-based</td>
+          <td>Ongoing</td>
+        </tr>
+        <tr>
+          <td>Equity</td>
+          <td>Co-founding model</td>
+          <td>Program terms</td>
+          <td>None</td>
+          <td>Investment terms</td>
+        </tr>
+        <tr>
+          <td>Best For</td>
+          <td>Deep domain experts</td>
+          <td>Existing startups</td>
+          <td>Corporates & institutions</td>
+          <td>Growth-stage ventures</td>
+        </tr>
+        <tr>
+          <td>Key Value</td>
+          <td>Full operational support</td>
+          <td>Mentorship & pilots</td>
+          <td>Strategic advisory</td>
+          <td>Capital & network</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Not Sure Which Program Fits?</h2>
+    <p>Let's talk. Our team can help you find the right path for your maritime innovation journey.</p>
+    <div class="cta-actions">
+      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Apply Now</a>
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline btn-lg">Schedule a Consultation</a>
+    </div>
+  </div>
+</section>

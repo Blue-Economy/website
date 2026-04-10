@@ -1,0 +1,70 @@
+academic:
+  - name: "ITU Denizcilik Fakultesi"
+    full_name: "Istanbul Technical University - Maritime Faculty"
+    description: "Turkey's leading technical university with a renowned maritime faculty driving research and education."
+    location: "Istanbul, Turkey"
+    website: "https://www.itu.edu.tr"
+
+  - name: "Yildiz Teknik Universitesi"
+    full_name: "Yildiz Technical University"
+    description: "One of Istanbul's oldest technical universities contributing to naval architecture and marine engineering."
+    location: "Istanbul, Turkey"
+    website: "https://www.yildiz.edu.tr"
+
+  - name: "Piri Reis Universitesi"
+    full_name: "Piri Reis University"
+    description: "Maritime-focused university named after the legendary Ottoman navigator and cartographer."
+    location: "Istanbul, Turkey"
+    website: "https://www.pirireis.edu.tr"
+
+institutional:
+  - name: "Turk Loydu"
+    full_name: "Turkish Lloyd"
+    description: "Turkey's national classification society ensuring safety and quality standards in maritime operations."
+    location: "Istanbul, Turkey"
+    website: "https://www.turkloydu.org"
+
+  - name: "GMO"
+    full_name: "Gemi Muhendisleri Odasi - Chamber of Naval Architects"
+    description: "Professional chamber representing naval architects and marine engineers in Turkey."
+    location: "Istanbul, Turkey"
+    website: "https://www.gmo.org.tr"
+
+  - name: "Deniz Ticaret Odasi"
+    full_name: "Chamber of Maritime Commerce"
+    description: "Key institution supporting maritime trade and shipping industry development in Turkey."
+    location: "Istanbul, Turkey"
+    website: "https://www.dto.org.tr"
+
+corporate:
+  - name: "ASFAT"
+    full_name: "ASFAT A.S."
+    description: "Turkish defense and maritime systems company developing advanced naval solutions."
+    location: "Ankara, Turkey"
+
+  - name: "DEARSAN"
+    full_name: "DEARSAN Shipyard"
+    description: "Leading Turkish shipbuilder specializing in defense vessels and maritime engineering."
+    location: "Tuzla, Istanbul, Turkey"
+
+  - name: "SEFT Muhendislik"
+    full_name: "SEFT Engineering"
+    description: "Marine engineering firm providing specialized solutions for the maritime industry."
+    location: "Istanbul, Turkey"
+
+ecosystem:
+  - name: "Maritime Blue"
+    full_name: "Maritime Blue"
+    description: "US-based Blue Economy coalition accelerating maritime innovation in the Pacific Northwest."
+    location: "Seattle, USA"
+    website: "https://www.maritimeblue.org"
+
+  - name: "Startup Wharf"
+    full_name: "Startup Wharf"
+    description: "UK maritime accelerator connecting startups with shipping and logistics industry leaders."
+    location: "London, UK"
+
+  - name: "theDOCK"
+    full_name: "theDOCK Innovation Hub"
+    description: "Israel's maritime technology accelerator fostering innovation in shipping and logistics."
+    location: "Tel Aviv, Israel"

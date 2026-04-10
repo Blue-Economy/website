@@ -1,0 +1,81 @@
+---
+layout: default
+title: Contact
+description: "Get in touch with Mursel Ventures. We'd love to hear from you."
+permalink: /contact/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Get in Touch</span>
+    <h1>Contact Us</h1>
+    <p class="page-subtitle">Have a question, idea, or partnership proposal? We'd love to hear from you.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Reach Out</h3>
+        <p>Whether you're a startup founder, investor, mentor, or partner, our team is ready to connect.</p>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">{% include icons.html name="mail" size=20 %}</span>
+          <a href="mailto:info@murselventures.com">info@murselventures.com</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">{% include icons.html name="linkedin" size=20 %}</span>
+          <a href="https://www.linkedin.com/company/murselventures" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">{% include icons.html name="twitter" size=20 %}</span>
+          <a href="https://twitter.com/murselventures" target="_blank" rel="noopener">Twitter / X</a>
+        </div>
+
+        <div style="margin-top: 3rem;">
+          <h4 style="margin-bottom: 0.75rem;">Founders</h4>
+          {% for founder in site.data.team.founders %}
+          <div style="margin-bottom: 1rem;">
+            <div style="color: var(--text-inverse); font-weight: 500;">{{ founder.name }}</div>
+            <div style="display: flex; gap: 1rem; margin-top: 0.25rem;">
+              <a href="{{ founder.linkedin }}" target="_blank" rel="noopener" style="font-size: 0.85rem;">LinkedIn</a>
+              <a href="{{ founder.twitter }}" target="_blank" rel="noopener" style="font-size: 0.85rem;">Twitter</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+        <form action="mailto:info@murselventures.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label class="form-label">Name *</label>
+            <input type="text" class="form-input" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-input" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Subject</label>
+            <select class="form-select" name="subject">
+              <option value="">Select subject...</option>
+              <option value="general">General Inquiry</option>
+              <option value="press">Press / Media</option>
+              <option value="partnership">Partnership</option>
+              <option value="careers">Careers</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message *</label>
+            <textarea class="form-textarea" name="message" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width: 100%; justify-content: center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

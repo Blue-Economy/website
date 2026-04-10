@@ -1,0 +1,66 @@
+---
+layout: default
+title: Insights
+description: "Blue Economy trends, maritime technology analysis, startup stories, and industry reports from Mursel Ventures."
+permalink: /insights/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Insights</span>
+    <h1>BlueTech Intelligence</h1>
+    <p class="page-subtitle">Analysis, trends, and stories from the frontier of maritime innovation and the Blue Economy.</p>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="grid-2">
+      {% for post in site.data.posts %}
+      <div class="post-card">
+        <div class="post-category">{{ post.category }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt }}</p>
+        <div class="post-meta">
+          <span>{{ post.date }}</span>
+          <span>{{ post.read_time }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Featured Reports</span>
+      <h2 class="section-title">Essential Blue Economy Data</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>World Bank Blue Economy Report</h3>
+        <p>Comprehensive analysis of the $1.5T global Blue Economy opportunity and its growth trajectory.</p>
+        <span class="card-tag">Market Analysis</span>
+      </div>
+      <div class="card">
+        <h3>Digital Maritime Market</h3>
+        <p>PortTechnology's deep dive into the $159B digital maritime technology market and emerging trends.</p>
+        <span class="card-tag">Technology</span>
+      </div>
+      <div class="card">
+        <h3>Marine Vessel Market Analysis</h3>
+        <p>Fortune Business Insights' comprehensive look at the marine vessel market size and growth projections.</p>
+        <span class="card-tag">Industry Data</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Get BlueTech Insights Monthly</h2>
+    <p>Subscribe to our newsletter for curated Blue Economy insights, program updates, and ecosystem news.</p>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent btn-lg">Subscribe</a>
+  </div>
+</section>
