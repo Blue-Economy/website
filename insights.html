@@ -17,7 +17,7 @@ permalink: /insights/
   <div class="container">
     <div class="grid-2">
       {% for post in site.data.posts %}
-      <div class="post-card">
+      <div class="post-card reveal delay-{% cycle '1', '2' %}">
         <div class="post-category">{{ post.category }}</div>
         <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt }}</p>
@@ -33,32 +33,32 @@ permalink: /insights/
 
 <section class="section section-medium">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">Featured Reports</span>
       <h2 class="section-title">Essential Blue Economy Data</h2>
     </div>
     <div class="grid-3">
-      <div class="card">
+      <div class="card reveal delay-1">
+        <span class="badge badge-accent" style="margin-bottom: 1rem;">Market Analysis</span>
         <h3>World Bank Blue Economy Report</h3>
         <p>Comprehensive analysis of the $1.5T global Blue Economy opportunity and its growth trajectory.</p>
-        <span class="card-tag">Market Analysis</span>
       </div>
-      <div class="card">
+      <div class="card reveal delay-2">
+        <span class="badge badge-accent" style="margin-bottom: 1rem;">Technology</span>
         <h3>Digital Maritime Market</h3>
         <p>PortTechnology's deep dive into the $159B digital maritime technology market and emerging trends.</p>
-        <span class="card-tag">Technology</span>
       </div>
-      <div class="card">
+      <div class="card reveal delay-3">
+        <span class="badge badge-coral" style="margin-bottom: 1rem;">Industry Data</span>
         <h3>Marine Vessel Market Analysis</h3>
         <p>Fortune Business Insights' comprehensive look at the marine vessel market size and growth projections.</p>
-        <span class="card-tag">Industry Data</span>
       </div>
     </div>
   </div>
 </section>
 
 <section class="cta-section">
-  <div class="container">
+  <div class="container reveal-scale">
     <h2>Get BlueTech Insights Monthly</h2>
     <p>Subscribe to our newsletter for curated Blue Economy insights, program updates, and ecosystem news.</p>
     <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent btn-lg">Subscribe</a>

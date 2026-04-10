@@ -17,7 +17,7 @@ permalink: /programs/
   <div class="container">
     <div class="grid-2">
       {% for pillar in site.data.pillars %}
-      <div class="card">
+      <div class="card reveal delay-{% cycle '1', '2' %}">
         <div class="card-icon">{% include icons.html name=pillar.icon size=28 %}</div>
         <h3>{{ pillar.title }}</h3>
         <p>{{ pillar.description }}</p>
@@ -31,10 +31,11 @@ permalink: /programs/
 
 <section class="section section-medium">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">Compare Programs</span>
       <h2 class="section-title">Which Program is Right for You?</h2>
     </div>
+    <div class="reveal">
     <table class="comparison-table">
       <thead>
         <tr>
@@ -83,11 +84,12 @@ permalink: /programs/
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 </section>
 
 <section class="cta-section">
-  <div class="container">
+  <div class="container reveal-scale">
     <h2>Not Sure Which Program Fits?</h2>
     <p>Let's talk. Our team can help you find the right path for your maritime innovation journey.</p>
     <div class="cta-actions">

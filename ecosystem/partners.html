@@ -15,11 +15,11 @@ permalink: /ecosystem/partners/
 
 <section class="section section-dark">
   <div class="container">
-    <div class="partner-category">
+    <div class="partner-category reveal">
       <h3><span class="partner-category-icon">{% include icons.html name="graduation" size=24 %}</span> Academic Institutions</h3>
       <div class="partner-grid">
         {% for partner in site.data.partners.academic %}
-        <div class="partner-card">
+        <div class="partner-card reveal delay-{% cycle '1', '2', '3' %}">
           <h4>{{ partner.name }}</h4>
           <div class="partner-fullname">{{ partner.full_name }}</div>
           <p>{{ partner.description }}</p>
@@ -29,11 +29,11 @@ permalink: /ecosystem/partners/
       </div>
     </div>
 
-    <div class="partner-category">
+    <div class="partner-category reveal">
       <h3><span class="partner-category-icon">{% include icons.html name="building" size=24 %}</span> Institutional Organizations</h3>
       <div class="partner-grid">
         {% for partner in site.data.partners.institutional %}
-        <div class="partner-card">
+        <div class="partner-card reveal delay-{% cycle '1', '2', '3' %}">
           <h4>{{ partner.name }}</h4>
           <div class="partner-fullname">{{ partner.full_name }}</div>
           <p>{{ partner.description }}</p>
@@ -43,11 +43,11 @@ permalink: /ecosystem/partners/
       </div>
     </div>
 
-    <div class="partner-category">
+    <div class="partner-category reveal">
       <h3><span class="partner-category-icon">{% include icons.html name="anchor" size=24 %}</span> Corporate Partners</h3>
       <div class="partner-grid">
         {% for partner in site.data.partners.corporate %}
-        <div class="partner-card">
+        <div class="partner-card reveal delay-{% cycle '1', '2', '3' %}">
           <h4>{{ partner.name }}</h4>
           <div class="partner-fullname">{{ partner.full_name }}</div>
           <p>{{ partner.description }}</p>
@@ -57,11 +57,11 @@ permalink: /ecosystem/partners/
       </div>
     </div>
 
-    <div class="partner-category">
+    <div class="partner-category reveal">
       <h3><span class="partner-category-icon">{% include icons.html name="globe" size=24 %}</span> Ecosystem Partners</h3>
       <div class="partner-grid">
         {% for partner in site.data.partners.ecosystem %}
-        <div class="partner-card">
+        <div class="partner-card reveal delay-{% cycle '1', '2', '3' %}">
           <h4>{{ partner.name }}</h4>
           <div class="partner-fullname">{{ partner.full_name }}</div>
           <p>{{ partner.description }}</p>
@@ -74,7 +74,7 @@ permalink: /ecosystem/partners/
 </section>
 
 <section class="cta-section">
-  <div class="container">
+  <div class="container reveal-scale">
     <h2>Partner with Mursel</h2>
     <p>Whether you're an academic institution, corporation, or organization, let's explore how we can collaborate.</p>
     <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent btn-lg">Explore Collaboration</a>

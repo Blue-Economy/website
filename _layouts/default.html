@@ -37,7 +37,7 @@
         </ul>
       </nav>
       <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent nav-cta">Apply Now</a>
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span class="toggle-open">{% include icons.html name="menu" %}</span>
         <span class="toggle-close">{% include icons.html name="close" %}</span>
       </button>
@@ -56,10 +56,10 @@
             <span class="logo-text">MURSEL</span>
             <span class="logo-sub">VENTURES</span>
           </a>
-          <p class="footer-tagline">Building the future of the Blue Economy. Named after Kara Mursel Alp, the first Ottoman Admiral.</p>
+          <p class="footer-tagline">Building the future of the Blue Economy. Named after Kara Mursel Alp, the first Ottoman Admiral, we connect visionary entrepreneurs with capital and expertise.</p>
           <div class="social-links">
-            <a href="https://www.linkedin.com/company/murselventures" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icons.html name="linkedin" %}</a>
-            <a href="https://twitter.com/murselventures" target="_blank" rel="noopener" aria-label="Twitter">{% include icons.html name="twitter" %}</a>
+            <a href="https://www.linkedin.com/company/murselventures" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icons.html name="linkedin" size=18 %}</a>
+            <a href="https://twitter.com/murselventures" target="_blank" rel="noopener" aria-label="Twitter">{% include icons.html name="twitter" size=18 %}</a>
           </div>
         </div>
         <div class="footer-links">
@@ -85,13 +85,16 @@
           <ul>
             <li><a href="{{ '/apply/' | relative_url }}">Apply Now</a></li>
             <li><a href="{{ '/contact/' | relative_url }}">Contact Us</a></li>
-            <li><a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a></li>
-            <li><a href="{{ '/terms/' | relative_url }}">Terms of Use</a></li>
+            <li><a href="mailto:info@murselventures.com">info@murselventures.com</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Mursel Ventures. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
+          <a href="{{ '/terms/' | relative_url }}">Terms of Use</a>
+        </div>
       </div>
     </div>
   </footer>

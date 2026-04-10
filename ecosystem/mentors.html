@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mentors
-description: "Meet the expert mentors guiding BlueTech founders at Mursel Ventures."
+description: "Meet the expert mentors guiding BlueTech founders in the Mursel Ventures network."
 permalink: /ecosystem/mentors/
 ---
 
@@ -17,7 +17,7 @@ permalink: /ecosystem/mentors/
   <div class="container">
     <div class="grid-3">
       {% for mentor in site.data.mentors %}
-      <div class="mentor-card">
+      <div class="mentor-card reveal delay-{% cycle '1', '2', '3' %}">
         <div class="mentor-avatar">{{ mentor.name | split: ' ' | first | slice: 0 }}{{ mentor.name | split: ' ' | last | slice: 0 }}</div>
         <h3>{{ mentor.name }}</h3>
         <div class="mentor-title">{{ mentor.title }}</div>
@@ -25,12 +25,6 @@ permalink: /ecosystem/mentors/
         <div class="mentor-tags">
           {% for tag in mentor.expertise %}
           <span class="mentor-tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        <div style="margin-bottom: 0.5rem;">
-          <span class="mentor-tag" style="background: rgba(255,107,107,0.1); color: var(--success-coral);">{{ mentor.availability }}</span>
-          {% for lang in mentor.languages %}
-          <span class="mentor-tag">{{ lang }}</span>
           {% endfor %}
         </div>
         <div class="mentor-social">
@@ -43,9 +37,9 @@ permalink: /ecosystem/mentors/
 </section>
 
 <section class="cta-section">
-  <div class="container">
+  <div class="container reveal-scale">
     <h2>Become a Mentor</h2>
-    <p>Share your maritime expertise and help shape the future of BlueTech. Join our growing mentor network.</p>
+    <p>Share your expertise and help shape the next generation of Blue Economy innovators.</p>
     <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Apply as Mentor</a>
   </div>
 </section>

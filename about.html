@@ -15,14 +15,14 @@ permalink: /about/
 
 <section class="section section-dark">
   <div class="container">
-    <div class="grid-2" style="align-items: center;">
-      <div>
+    <div class="grid-2" style="align-items: center; gap: 4rem;">
+      <div class="reveal-left">
         <span class="section-label">Why Mursel?</span>
         <h2>A Legacy of Maritime Vision</h2>
-        <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.8;">In the early 14th century, Kara Mursel Alp established the foundations of Ottoman naval power. His strategic vision transformed a regional force into a Mediterranean powerhouse.</p>
-        <p style="color: var(--text-secondary); line-height: 1.8;">At Mursel Ventures, we believe that same strategic thinking is needed today -- not for conquest, but for sustainable ocean innovation. We exist to connect visionary entrepreneurs with the capital, expertise, and networks they need to turn ocean challenges into global opportunities.</p>
+        <p style="color: var(--text-secondary); margin-top: 1.25rem; line-height: 1.8;">In the early 14th century, Kara Mursel Alp established the foundations of Ottoman naval power. His strategic vision transformed a regional force into a Mediterranean powerhouse.</p>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-top: 0.75rem;">At Mursel Ventures, we believe that same strategic thinking is needed today &mdash; not for conquest, but for sustainable ocean innovation. We exist to connect visionary entrepreneurs with the capital, expertise, and networks they need to turn ocean challenges into global opportunities.</p>
       </div>
-      <div class="timeline">
+      <div class="timeline reveal-right">
         <div class="timeline-item">
           <h4>1300s</h4>
           <p>Kara Mursel Alp establishes Ottoman naval power as the first Kaptan-i Derya (Admiral)</p>
@@ -46,34 +46,34 @@ permalink: /about/
 
 <section class="section section-medium">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">The Opportunity</span>
       <h2 class="section-title">Why Blue Economy?</h2>
       <p class="section-desc">The sustainable use of ocean resources for economic growth, improved livelihoods, and jobs while preserving ocean ecosystem health.</p>
     </div>
     <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">$1.5T</div>
+      <div class="stat-item reveal delay-1">
+        <div class="stat-number" data-count="1.5" data-prefix="$" data-suffix="T">$1.5T</div>
         <div class="stat-label">Annual Global Impact</div>
         <div class="stat-source">World Bank</div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">$159B</div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-number" data-count="159" data-prefix="$" data-suffix="B">$159B</div>
         <div class="stat-label">Digital Maritime Market</div>
         <div class="stat-source">PortTechnology</div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item reveal delay-3">
         <div class="stat-number">3 Seas</div>
         <div class="stat-label">Turkey's Strategic Position</div>
         <div class="stat-source">Geographic advantage</div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item reveal delay-4">
         <div class="stat-number">SDG 14</div>
         <div class="stat-label">Life Below Water</div>
         <div class="stat-source">UN Sustainable Development</div>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 2rem;">
+    <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
       <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.8;">Turkey, with its unique geographic position spanning three seas and centuries of maritime heritage, is poised to lead this transformation. The Blue Economy represents one of the greatest economic and environmental opportunities of our generation.</p>
     </div>
   </div>
@@ -81,18 +81,18 @@ permalink: /about/
 
 <section class="section section-dark">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">Our Purpose</span>
       <h2 class="section-title">Mission & Vision</h2>
     </div>
     <div class="grid-2">
-      <div class="card" style="border-left: 3px solid var(--ocean-accent);">
+      <div class="card reveal-left" style="border-left: 3px solid var(--ocean-accent);">
         <h3>Mission</h3>
-        <p style="font-size: 1.1rem; line-height: 1.7;">"Future is what we make it. Making it better by supporting BlueTech ventures that focus on human, environmental, and business success."</p>
+        <p style="font-size: 1.1rem; line-height: 1.8;">"Future is what we make it. Making it better by supporting BlueTech ventures that focus on human, environmental, and business success."</p>
       </div>
-      <div class="card" style="border-left: 3px solid var(--success-coral);">
+      <div class="card reveal-right" style="border-left: 3px solid var(--success-coral);">
         <h3>Vision</h3>
-        <p style="font-size: 1.1rem; line-height: 1.7;">"Make the challenge an opportunity for entrepreneurs."</p>
+        <p style="font-size: 1.1rem; line-height: 1.8;">"Make the challenge an opportunity for entrepreneurs."</p>
       </div>
     </div>
   </div>
@@ -100,13 +100,13 @@ permalink: /about/
 
 <section class="section section-medium">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">Leadership</span>
       <h2 class="section-title">Meet the Founders</h2>
     </div>
     <div class="founder-grid">
       {% for founder in site.data.team.founders %}
-      <div class="founder-card">
+      <div class="founder-card reveal delay-{{ forloop.index }}">
         <div class="founder-avatar">{{ founder.name | split: ' ' | first | slice: 0 }}{{ founder.name | split: ' ' | last | slice: 0 }}</div>
         <h3>{{ founder.name }}</h3>
         <div class="founder-role">{{ founder.role }}</div>
@@ -118,9 +118,9 @@ permalink: /about/
       </div>
       {% endfor %}
     </div>
-    <div style="text-align: center; margin-top: 2rem;">
-      <div class="card" style="max-width: 700px; margin: 0 auto; text-align: center;">
-        <p style="font-style: italic; font-size: 1.05rem; line-height: 1.7;">"We started Mursel because we believe Turkey's maritime heritage, combined with modern venture building practices, can unlock incredible value in the Blue Economy -- for entrepreneurs, investors, and the planet."</p>
+    <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
+      <div class="quote-card">
+        <p>"We started Mursel because we believe Turkey's maritime heritage, combined with modern venture building practices, can unlock incredible value in the Blue Economy &mdash; for entrepreneurs, investors, and the planet."</p>
       </div>
     </div>
   </div>
@@ -128,13 +128,13 @@ permalink: /about/
 
 <section class="section section-dark">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">What Drives Us</span>
       <h2 class="section-title">Core Values</h2>
     </div>
     <div class="values-grid">
       {% for value in site.data.team.values %}
-      <div class="value-card">
+      <div class="value-card reveal delay-{{ forloop.index }}">
         <div class="value-icon">{% include icons.html name=value.icon size=28 %}</div>
         <h4>{{ value.title }}</h4>
         <p>{{ value.description }}</p>
@@ -145,8 +145,8 @@ permalink: /about/
 </section>
 
 <section class="cta-section">
-  <div class="container">
-    <h2>Join Our Team</h2>
+  <div class="container reveal-scale">
+    <h2>Join Our Mission</h2>
     <p>We're building the future of the Blue Economy and looking for passionate people to join us.</p>
     <div class="cta-actions">
       <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Apply to Mursel</a>

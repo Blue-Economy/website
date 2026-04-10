@@ -1,15 +1,23 @@
 - number: "$1.5T"
   label: "Global Blue Economy Annual Impact"
   source: "World Bank"
+  count: 1.5
+  prefix: "$"
+  suffix: "T"
 
 - number: "3"
   label: "Seas Surrounding Turkey"
   detail: "Strategic maritime crossroads"
+  count: 3
 
 - number: "16+"
   label: "Industry Mentors"
   detail: "Maritime & tech experts"
+  count: 16
+  suffix: "+"
 
 - number: "700+"
   label: "Years of Maritime Legacy"
   detail: "Since Kara Mursel Alp"
+  count: 700
+  suffix: "+"

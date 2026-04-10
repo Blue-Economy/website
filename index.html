@@ -4,6 +4,7 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
 ---
 
 <section class="hero">
+  <canvas id="hero-canvas"></canvas>
   <div class="container">
     <span class="hero-label">Capital &middot; Venture Building &middot; Consulting</span>
     <h1>Building the Future of the Blue Economy</h1>
@@ -15,16 +16,43 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
   </div>
 </section>
 
+<section class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner reveal">
+      <div class="trust-item">
+        <span class="trust-item-number">16+</span>
+        Expert Mentors
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-number">4</span>
+        Program Tracks
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-number">3</span>
+        Seas Connected
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-number">$1.5T</span>
+        Market Opportunity
+      </div>
+      <div class="trust-item">
+        <span class="trust-item-number">SDG 14</span>
+        UN Aligned
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section-dark">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">What We Do</span>
       <h2 class="section-title">Four Pillars of Ocean Innovation</h2>
       <p class="section-desc">An integrated ecosystem connecting visionary entrepreneurs with capital, expertise, and networks to turn ocean challenges into global opportunities.</p>
     </div>
     <div class="grid-4">
       {% for pillar in site.data.pillars %}
-      <div class="card">
+      <div class="card reveal delay-{{ forloop.index }}">
         <div class="card-icon">{% include icons.html name=pillar.icon size=28 %}</div>
         <h3>{{ pillar.title }}</h3>
         <p>{{ pillar.description }}</p>
@@ -38,14 +66,56 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
 
 <section class="section section-medium">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
+      <span class="section-label">Focus Areas</span>
+      <h2 class="section-title">Where Innovation Meets the Ocean</h2>
+      <p class="section-desc">We invest in and build ventures across 10 critical Blue Economy sectors.</p>
+    </div>
+    <div class="focus-areas-grid">
+      <div class="focus-card reveal delay-1">
+        <span class="focus-icon">&#9875;</span>
+        <h4>Maritime Logistics</h4>
+        <p>Smart port systems, vessel tracking, supply chain optimization, and digital shipping platforms.</p>
+      </div>
+      <div class="focus-card reveal delay-2">
+        <span class="focus-icon">&#127754;</span>
+        <h4>Ocean Energy</h4>
+        <p>Wave, tidal, and offshore wind technologies for sustainable marine energy generation.</p>
+      </div>
+      <div class="focus-card reveal delay-3">
+        <span class="focus-icon">&#128032;</span>
+        <h4>Sustainable Aquaculture</h4>
+        <p>Next-generation fish farming, algae cultivation, and sustainable seafood production.</p>
+      </div>
+      <div class="focus-card reveal delay-1">
+        <span class="focus-icon">&#128225;</span>
+        <h4>Marine IoT & Sensors</h4>
+        <p>Underwater monitoring, environmental sensing, and autonomous ocean data collection.</p>
+      </div>
+      <div class="focus-card reveal delay-2">
+        <span class="focus-icon">&#128674;</span>
+        <h4>Clean Shipping</h4>
+        <p>Electric vessels, alternative fuels, emissions reduction, and green port technologies.</p>
+      </div>
+      <div class="focus-card reveal delay-3">
+        <span class="focus-icon">&#127757;</span>
+        <h4>Ocean Conservation Tech</h4>
+        <p>Pollution monitoring, reef restoration, marine biodiversity protection platforms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header reveal">
       <span class="section-label">Blue Economy Impact</span>
       <h2 class="section-title">The Opportunity is Immense</h2>
     </div>
     <div class="stats-grid">
       {% for stat in site.data.stats %}
-      <div class="stat-item">
-        <div class="stat-number">{{ stat.number }}</div>
+      <div class="stat-item reveal delay-{{ forloop.index }}">
+        <div class="stat-number" {% if stat.count %}data-count="{{ stat.count }}" data-prefix="{{ stat.prefix | default: '' }}" data-suffix="{{ stat.suffix | default: '' }}"{% endif %}>{{ stat.number }}</div>
         <div class="stat-label">{{ stat.label }}</div>
         <div class="stat-source">{{ stat.source | default: stat.detail }}</div>
       </div>
@@ -54,16 +124,48 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
   </div>
 </section>
 
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">How It Works</span>
+      <h2 class="section-title">Your Journey With Mursel</h2>
+      <p class="section-desc">A clear path from application to ocean impact.</p>
+    </div>
+    <div class="process-steps reveal">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h4>Apply</h4>
+        <p>Submit your application with your vision for ocean innovation.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h4>Match</h4>
+        <p>We match you to the right program and assign expert mentors.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h4>Build</h4>
+        <p>Develop your venture with hands-on support, resources, and pilot access.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h4>Scale</h4>
+        <p>Launch to market with investor connections and global partnerships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section-dark">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-label">Our Network</span>
       <h2 class="section-title">Expert Mentors Driving Impact</h2>
       <p class="section-desc">World-class maritime and technology experts guiding the next generation of BlueTech founders.</p>
     </div>
     <div class="grid-3">
       {% for mentor in site.data.mentors limit:3 %}
-      <div class="mentor-card">
+      <div class="mentor-card reveal delay-{{ forloop.index }}">
         <div class="mentor-avatar">{{ mentor.name | split: ' ' | first | slice: 0 }}{{ mentor.name | split: ' ' | last | slice: 0 }}</div>
         <h3>{{ mentor.name }}</h3>
         <div class="mentor-title">{{ mentor.title }}</div>
@@ -79,14 +181,25 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
       </div>
       {% endfor %}
     </div>
-    <div style="text-align: center; margin-top: 2.5rem;">
+    <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
       <a href="{{ '/ecosystem/mentors/' | relative_url }}" class="btn btn-outline">View All Mentors</a>
     </div>
   </div>
 </section>
 
+<section class="newsletter-section">
+  <div class="container reveal">
+    <h3>Stay Updated on Blue Economy</h3>
+    <p>Get curated BlueTech insights, program updates, and ecosystem news monthly.</p>
+    <div class="newsletter-form">
+      <input type="email" class="form-input" placeholder="Enter your email address">
+      <a href="{{ '/contact/' | relative_url }}" class="btn btn-accent">Subscribe</a>
+    </div>
+  </div>
+</section>
+
 <section class="cta-section">
-  <div class="container">
+  <div class="container reveal-scale">
     <h2>Ready to Build the Future of the Oceans?</h2>
     <p>Whether you're a founder, investor, mentor, or partner, there's a place for you in the Mursel ecosystem.</p>
     <div class="cta-actions">
