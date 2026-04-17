@@ -1,0 +1,120 @@
+Here’s the clean, step-by-step instructions to apply this to your repo:
+
+⚙️ 1. REMOVE EXISTING NEXT.JS DEPLOYMENT
+In your repo:
+.github/workflows/nextjs.yml
+👉 Delete this file (or replace it completely)
+🆕 2. CREATE NEW WORKFLOW FILE
+Create a new file:
+.github/workflows/jekyll.yml
+📄 3. ADD THIS WORKFLOW CONFIG
+Paste this inside jekyll.yml:
+name: Deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install dependencies
+        run: |
+          bundle install
+
+      - name: Build site
+        run: |
+          bundle exec jekyll build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+📦 4. ADD REQUIRED FILES (IMPORTANT)
+Make sure your repo has:
+✅ Gemfile
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "webrick"
+✅ _config.yml
+Basic example:
+title: Mursel Ventures
+description: Blue Economy Operating System
+baseurl: ""
+url: "https://blue-economy.github.io"
+🚀 5. ENABLE GITHUB PAGES
+Go to:
+Repo → Settings → Pages
+
+Then:
+
+Source → GitHub Actions
+NOT “Deploy from branch”
+🔄 6. PUSH CHANGES
+git add .
+git commit -m "Switch to Jekyll deployment"
+git push origin main
+🧠 WHAT THIS DOES
+After push:
+GitHub Actions runs
+Installs Ruby + Jekyll
+Builds site → _site/
+Deploys automatically to GitHub Pages
+⚠️ IMPORTANT (YOUR CASE)
+Right now your repo:
+👉 was using Next.js
+If you don’t actually convert your site to Jekyll:
+
+❌ This workflow will FAIL
+
+🔥 DECISION YOU MUST MAKE
+Option A — KEEP NEXT.JS (recommended if complex UI)
+→ Use Vercel / Netlify instead
+Option B — SWITCH TO JEKYLL (simple site)
+→ Use this workflow
+💣 HONEST NOTE
+For Mursel:
+👉 You should NOT use Jekyll
+👉 You should use:
+
+Webflow (frontend)
+OR Next.js + Vercel
+Because:
+dynamic CMS
+dashboards later
+scalability
+Jekyll = too static for your vision
+🚀 If you want next
+I can:
+Fix your repo for Next.js + Vercel deploy (correct stack)
+Or convert this into Webflow export-ready structure
+Just say which direction 👍
