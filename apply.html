@@ -1,31 +1,62 @@
 ---
 layout: default
 title: Apply
-description: "Apply to Mursel Ventures as a startup, investor, mentor, or partner."
+description: "Choose your path into the Mursel operating system: test an idea, apply as founder, investor, or mentor, or partner with us."
 permalink: /apply/
 ---
 
 <section class="page-hero">
   <div class="container">
     <span class="section-label">Join Mursel</span>
-    <h1>Start Your Application</h1>
-    <p class="page-subtitle">Select your path and tell us about yourself. We review every application carefully.</p>
+    <h1>Choose Your Path</h1>
+    <p class="page-subtitle">Test an idea, apply as a founder, explore investment, or join the mentor network. Every path leads into the operating system.</p>
   </div>
 </section>
 
 <section class="section section-dark">
   <div class="container reveal" style="max-width: 800px;">
-    <div class="form-tabs">
-      <button class="form-tab active" data-tab="tab-startup">For Startups</button>
-      <button class="form-tab" data-tab="tab-investor">For Investors</button>
-      <button class="form-tab" data-tab="tab-mentor">For Mentors</button>
-      <button class="form-tab" data-tab="tab-partner">For Partners</button>
+    <div class="form-tabs" role="tablist" aria-label="Application paths">
+      <button class="form-tab active" data-tab="tab-test" id="test" role="tab" aria-selected="true" aria-controls="tab-test">Test Your Idea</button>
+      <button class="form-tab" data-tab="tab-startup" id="founder" role="tab" aria-selected="false" aria-controls="tab-startup">Apply as Founder</button>
+      <button class="form-tab" data-tab="tab-investor" id="investor" role="tab" aria-selected="false" aria-controls="tab-investor">Apply as Investor</button>
+      <button class="form-tab" data-tab="tab-mentor" id="mentor" role="tab" aria-selected="false" aria-controls="tab-mentor">Apply as Mentor</button>
+      <button class="form-tab" data-tab="tab-partner" id="partner" role="tab" aria-selected="false" aria-controls="tab-partner">Partner With Us</button>
     </div>
 
-    <div id="tab-startup" class="tab-panel active" style="display: block;">
+    <div id="tab-test" class="tab-panel active" style="display: block;" role="tabpanel" aria-labelledby="test">
       <div class="card">
-        <h3 style="margin-bottom: 0.5rem;">Startup Application</h3>
-        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Apply to our Venture Studio or Accelerator program.</p>
+        <h3 style="margin-bottom: 0.5rem;">Test Your Idea</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Pressure-test your venture idea against our mentor network and Mursel AI <em>before</em> you formally apply. We'll send a validation summary within 5 business days.</p>
+        <form action="mailto:info@murselventures.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label class="form-label" for="test-name">Your Name *</label>
+            <input type="text" id="test-name" class="form-input" name="name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="test-email">Email *</label>
+            <input type="email" id="test-email" class="form-input" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="test-idea">One-Sentence Idea *</label>
+            <input type="text" id="test-idea" class="form-input" name="idea" placeholder="We help [who] do [what] by [how]" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="test-problem">What ocean/maritime problem does it solve? *</label>
+            <textarea id="test-problem" class="form-textarea" name="problem" placeholder="Describe the problem..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="test-question">What's your biggest open question?</label>
+            <textarea id="test-question" class="form-textarea" name="question" placeholder="Market? Tech? Regulation? Pilot access?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">Validate My Idea</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="tab-startup" class="tab-panel" style="display: none;" role="tabpanel" aria-labelledby="founder">
+      <div class="card">
+        <h3 style="margin-bottom: 0.5rem;">Founder Application</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Apply to our Venture Studio or Accelerator program. We back operators building infrastructure, software, and systems for the Blue Economy.</p>
 
         <div class="step-indicator">
           <span class="step-dot active"></span>
@@ -121,7 +152,7 @@ permalink: /apply/
       </div>
     </div>
 
-    <div id="tab-investor" class="tab-panel" style="display: none;">
+    <div id="tab-investor" class="tab-panel" style="display: none;" role="tabpanel" aria-labelledby="investor">
       <div class="card">
         <h3 style="margin-bottom: 0.5rem;">Investor Inquiry</h3>
         <p style="color: var(--text-secondary); margin-bottom: 2rem;">Explore fund opportunities or co-investment in BlueTech ventures.</p>
@@ -162,7 +193,7 @@ permalink: /apply/
       </div>
     </div>
 
-    <div id="tab-mentor" class="tab-panel" style="display: none;">
+    <div id="tab-mentor" class="tab-panel" style="display: none;" role="tabpanel" aria-labelledby="mentor">
       <div class="card">
         <h3 style="margin-bottom: 0.5rem;">Mentor Application</h3>
         <p style="color: var(--text-secondary); margin-bottom: 2rem;">Join our expert mentor network and guide BlueTech founders.</p>
@@ -205,7 +236,7 @@ permalink: /apply/
       </div>
     </div>
 
-    <div id="tab-partner" class="tab-panel" style="display: none;">
+    <div id="tab-partner" class="tab-panel" style="display: none;" role="tabpanel" aria-labelledby="partner">
       <div class="card">
         <h3 style="margin-bottom: 0.5rem;">Partnership Inquiry</h3>
         <p style="color: var(--text-secondary); margin-bottom: 2rem;">Collaborate with Mursel Ventures on Blue Economy initiatives.</p>

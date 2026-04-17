@@ -1444,3 +1444,106 @@ html.js-ready .reveal-scale.visible {
   .cta-section { padding: 4rem 0; }
   .cta-section h2 { font-size: 1.75rem; }
 }
+
+/* ===== System Flow ===== */
+.system-flow {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.flow-node {
+  background: rgba(30, 58, 95, 0.4);
+  border: 1px solid rgba(64, 224, 208, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  min-width: 140px;
+  flex: 1 1 140px;
+  max-width: 180px;
+  transition: all 0.3s ease;
+}
+.flow-node:hover {
+  border-color: var(--ocean-accent);
+  transform: translateY(-4px);
+}
+.flow-node-accent {
+  background: linear-gradient(135deg, rgba(64, 224, 208, 0.15), rgba(30, 58, 95, 0.4));
+  border-color: rgba(64, 224, 208, 0.5);
+}
+.flow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(64, 224, 208, 0.15);
+  color: var(--ocean-accent);
+  margin-bottom: 0.75rem;
+}
+.flow-node h4 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+  color: var(--text-primary);
+}
+.flow-node p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--ocean-accent);
+  opacity: 0.6;
+}
+@media (max-width: 768px) {
+  .flow-arrow { transform: rotate(90deg); }
+  .system-flow { flex-direction: column; align-items: center; }
+  .flow-node { width: 100%; max-width: 280px; }
+}
+
+/* ===== Why Now ===== */
+.why-now-card {
+  background: rgba(10, 25, 41, 0.6);
+  border: 1px solid rgba(64, 224, 208, 0.15);
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.why-now-card:hover {
+  border-color: var(--ocean-accent);
+  transform: translateY(-4px);
+}
+.why-now-num {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--ocean-accent);
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+}
+.why-now-card h4 {
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+  color: var(--text-primary);
+}
+.why-now-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ===== Mentor Impact Line ===== */
+.mentor-impact {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0.75rem 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}

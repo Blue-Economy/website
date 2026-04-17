@@ -1,17 +1,17 @@
 ---
 layout: default
-title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
+title: "Blue Economy Operating System"
 ---
 
 <section class="hero">
   <canvas id="hero-canvas"></canvas>
   <div class="container">
-    <span class="hero-label">Capital &middot; Venture Building &middot; Consulting</span>
-    <h1>Building the Future of the Blue Economy</h1>
-    <p class="hero-subtitle">Named after Kara Mursel Alp, the first Ottoman Admiral, Mursel Ventures carries forward a 700-year legacy of maritime leadership into sustainable ocean innovation.</p>
+    <span class="hero-label">The Blue Economy Operating System</span>
+    <h1>We Don't Just Build Ventures.<br>We Built the System That Builds Them.</h1>
+    <p class="hero-subtitle">Mursel Ventures is the operating system for the Blue Economy — uniting an elite mentor network, an AI intelligence layer, real industry access through consulting, and capital through our fund. Named after Kara Mursel Alp, the first Ottoman Admiral, we carry forward a 700-year maritime legacy into the next era of ocean innovation.</p>
     <div class="hero-actions">
-      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Apply Now</a>
-      <a href="{{ '/about/' | relative_url }}" class="btn btn-outline btn-lg">Learn About Blue Economy</a>
+      <a href="{{ '/apply/#test' | relative_url }}" class="btn btn-accent btn-lg">Test Your Idea</a>
+      <a href="{{ '/apply/' | relative_url }}" class="btn btn-outline btn-lg">Apply Now</a>
     </div>
   </div>
 </section>
@@ -20,7 +20,7 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
   <div class="container">
     <div class="trust-bar-inner reveal">
       <div class="trust-item">
-        <span class="trust-item-number">16+</span>
+        <span class="trust-item-number">24+</span>
         Expert Mentors
       </div>
       <div class="trust-item">
@@ -46,6 +46,29 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
 <section class="section section-dark">
   <div class="container">
     <div class="section-header reveal">
+      <span class="section-label">The System</span>
+      <h2 class="section-title">One Operating System. Six Layers.</h2>
+      <p class="section-desc">Talent flows in. Ventures flow out. Every layer reinforces the next.</p>
+    </div>
+    <div class="system-flow reveal">
+      <div class="flow-node"><span class="flow-icon">{% include icons.html name="users" size=24 %}</span><h4>Talent</h4><p>Founders &amp; operators</p></div>
+      <div class="flow-arrow">{% include icons.html name="arrow-right" size=24 %}</div>
+      <div class="flow-node flow-node-accent"><span class="flow-icon">{% include icons.html name="lightbulb" size=24 %}</span><h4>Mursel AI</h4><p>Validation &amp; matching</p></div>
+      <div class="flow-arrow">{% include icons.html name="arrow-right" size=24 %}</div>
+      <div class="flow-node"><span class="flow-icon">{% include icons.html name="handshake" size=24 %}</span><h4>Mentors</h4><p>Strategic guidance</p></div>
+      <div class="flow-arrow">{% include icons.html name="arrow-right" size=24 %}</div>
+      <div class="flow-node"><span class="flow-icon">{% include icons.html name="compass" size=24 %}</span><h4>Consulting</h4><p>Industry access</p></div>
+      <div class="flow-arrow">{% include icons.html name="arrow-right" size=24 %}</div>
+      <div class="flow-node"><span class="flow-icon">{% include icons.html name="anchor" size=24 %}</span><h4>Venture</h4><p>Studio &amp; accelerator</p></div>
+      <div class="flow-arrow">{% include icons.html name="arrow-right" size=24 %}</div>
+      <div class="flow-node flow-node-accent"><span class="flow-icon">{% include icons.html name="chart" size=24 %}</span><h4>Fund</h4><p>Conviction capital</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header reveal">
       <span class="section-label">What We Do</span>
       <h2 class="section-title">Four Pillars of Ocean Innovation</h2>
       <p class="section-desc">An integrated ecosystem connecting visionary entrepreneurs with capital, expertise, and networks to turn ocean challenges into global opportunities.</p>
@@ -64,43 +87,64 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
   </div>
 </section>
 
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Our Network</span>
+      <h2 class="section-title">Our Strongest Asset Is Not Software.<br>It's the Network Behind It.</h2>
+      <p class="section-desc">Admirals, professors, shipyard GMs, defense industry leaders, and operators who have built the systems we're now scaling. Mentors don't just advise — they open doors, unlock pilots, and remove regulatory friction.</p>
+    </div>
+    <div class="grid-3">
+      {% for mentor in site.data.mentors limit:6 %}
+      <div class="mentor-card reveal delay-{{ forloop.index }}">
+        <div class="mentor-avatar">{{ mentor.name | split: ' ' | first | slice: 0 }}{{ mentor.name | split: ' ' | last | slice: 0 }}</div>
+        <h3>{{ mentor.name }}</h3>
+        <div class="mentor-title">{{ mentor.title }}</div>
+        <p class="mentor-impact">&rarr; {{ mentor.bio }}</p>
+        <div class="mentor-tags">
+          {% for tag in mentor.expertise %}
+          <span class="mentor-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        <div class="mentor-social">
+          {% if mentor.linkedin %}<a href="{{ mentor.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icons.html name="linkedin" size=18 %}</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
+      <a href="{{ '/ecosystem/mentors/' | relative_url }}" class="btn btn-outline">View All 24 Mentors</a>
+    </div>
+  </div>
+</section>
+
 <section class="section section-medium">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Focus Areas</span>
-      <h2 class="section-title">Where Innovation Meets the Ocean</h2>
-      <p class="section-desc">We invest in and build ventures across 10 critical Blue Economy sectors.</p>
+      <span class="section-label">Why Now</span>
+      <h2 class="section-title">The Window Is Open</h2>
+      <p class="section-desc">Four converging shifts are reshaping the ocean economy. The next decade will define who builds it.</p>
     </div>
-    <div class="focus-areas-grid">
-      <div class="focus-card reveal delay-1">
-        <span class="focus-icon">&#9875;</span>
-        <h4>Maritime Logistics</h4>
-        <p>Smart port systems, vessel tracking, supply chain optimization, and digital shipping platforms.</p>
+    <div class="grid-4">
+      <div class="why-now-card reveal delay-1">
+        <span class="why-now-num">01</span>
+        <h4>AI Makes Knowledge Abundant</h4>
+        <p>Domain expertise once locked in 30-year careers is now compressible into AI systems — accelerating every founder.</p>
       </div>
-      <div class="focus-card reveal delay-2">
-        <span class="focus-icon">&#127754;</span>
-        <h4>Ocean Energy</h4>
-        <p>Wave, tidal, and offshore wind technologies for sustainable marine energy generation.</p>
+      <div class="why-now-card reveal delay-2">
+        <span class="why-now-num">02</span>
+        <h4>Maritime Is Digitizing</h4>
+        <p>Ports, vessels, and shipyards are becoming software-defined. The infrastructure layer is being rebuilt right now.</p>
       </div>
-      <div class="focus-card reveal delay-3">
-        <span class="focus-icon">&#128032;</span>
-        <h4>Sustainable Aquaculture</h4>
-        <p>Next-generation fish farming, algae cultivation, and sustainable seafood production.</p>
+      <div class="why-now-card reveal delay-3">
+        <span class="why-now-num">03</span>
+        <h4>Supply Chains Are Shifting</h4>
+        <p>Global trade is rerouting. New corridors, new ports, new logistics platforms are being built across EMEA and Asia.</p>
       </div>
-      <div class="focus-card reveal delay-1">
-        <span class="focus-icon">&#128225;</span>
-        <h4>Marine IoT & Sensors</h4>
-        <p>Underwater monitoring, environmental sensing, and autonomous ocean data collection.</p>
-      </div>
-      <div class="focus-card reveal delay-2">
-        <span class="focus-icon">&#128674;</span>
-        <h4>Clean Shipping</h4>
-        <p>Electric vessels, alternative fuels, emissions reduction, and green port technologies.</p>
-      </div>
-      <div class="focus-card reveal delay-3">
-        <span class="focus-icon">&#127757;</span>
-        <h4>Ocean Conservation Tech</h4>
-        <p>Pollution monitoring, reef restoration, marine biodiversity protection platforms.</p>
+      <div class="why-now-card reveal delay-1">
+        <span class="why-now-num">04</span>
+        <h4>Defense &amp; Resilience Rising</h4>
+        <p>Sovereign maritime capability — defense, industrial, energy — is the strategic priority of every major economy.</p>
       </div>
     </div>
   </div>
@@ -109,8 +153,50 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
 <section class="section section-dark">
   <div class="container">
     <div class="section-header reveal">
+      <span class="section-label">Focus Areas</span>
+      <h2 class="section-title">Where We Build Conviction</h2>
+      <p class="section-desc">Six sectors where Mursel has deep network depth, real pilot access, and a defensible right to win.</p>
+    </div>
+    <div class="focus-areas-grid">
+      <div class="focus-card reveal delay-1">
+        <span class="focus-icon">&#9875;</span>
+        <h4>Maritime Tech</h4>
+        <p>Smart vessel systems, marine software, autonomous platforms, and digital shipping infrastructure.</p>
+      </div>
+      <div class="focus-card reveal delay-2">
+        <span class="focus-icon">&#128674;</span>
+        <h4>Ports &amp; Logistics</h4>
+        <p>Smart port operations, terminal automation, supply chain platforms, and trade flow optimization.</p>
+      </div>
+      <div class="focus-card reveal delay-3">
+        <span class="focus-icon">&#128737;</span>
+        <h4>Defense Maritime</h4>
+        <p>Naval platforms, dual-use systems, sovereign maritime capability, and defense industrial software.</p>
+      </div>
+      <div class="focus-card reveal delay-1">
+        <span class="focus-icon">&#128187;</span>
+        <h4>Industrial Maritime Software</h4>
+        <p>Shipyard execution, engineering systems, fleet operations, and industrial digital twins.</p>
+      </div>
+      <div class="focus-card reveal delay-2">
+        <span class="focus-icon">&#127754;</span>
+        <h4>Offshore Systems</h4>
+        <p>Offshore wind, ROV systems, subsea infrastructure, and underwater technology platforms.</p>
+      </div>
+      <div class="focus-card reveal delay-3">
+        <span class="focus-icon">&#127757;</span>
+        <h4>Ocean Sustainability</h4>
+        <p>Clean shipping, alternative fuels, emissions monitoring, and marine environmental technology.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-medium">
+  <div class="container">
+    <div class="section-header reveal">
       <span class="section-label">Blue Economy Impact</span>
-      <h2 class="section-title">The Opportunity is Immense</h2>
+      <h2 class="section-title">The Opportunity Is Immense</h2>
     </div>
     <div class="stats-grid">
       {% for stat in site.data.stats %}
@@ -124,65 +210,44 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
   </div>
 </section>
 
-<section class="section section-medium">
+<section class="section section-dark">
   <div class="container">
     <div class="section-header reveal">
       <span class="section-label">How It Works</span>
-      <h2 class="section-title">Your Journey With Mursel</h2>
-      <p class="section-desc">A clear path from application to ocean impact.</p>
+      <h2 class="section-title">From Idea to Venture</h2>
+      <p class="section-desc">Test before you build. Validate before you raise. The Mursel system de-risks every step.</p>
     </div>
     <div class="process-steps reveal">
       <div class="process-step">
         <div class="step-number">1</div>
-        <h4>Apply</h4>
-        <p>Submit your application with your vision for ocean innovation.</p>
+        <h4>Test</h4>
+        <p>Use Mursel AI to pressure-test your idea against real industry data and mentor heuristics.</p>
       </div>
       <div class="process-step">
         <div class="step-number">2</div>
-        <h4>Match</h4>
-        <p>We match you to the right program and assign expert mentors.</p>
+        <h4>Validate</h4>
+        <p>Get matched with mentors and consulting access to validate demand with real industry buyers.</p>
       </div>
       <div class="process-step">
         <div class="step-number">3</div>
-        <h4>Build</h4>
-        <p>Develop your venture with hands-on support, resources, and pilot access.</p>
+        <h4>Apply</h4>
+        <p>Submit to the right program — Studio, Accelerator, or Fund — with conviction already built.</p>
       </div>
       <div class="process-step">
         <div class="step-number">4</div>
-        <h4>Scale</h4>
-        <p>Launch to market with investor connections and global partnerships.</p>
+        <h4>Build</h4>
+        <p>Develop your venture with hands-on operators, pilot access, and strategic capital.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section-dark">
+<section class="section section-medium">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Our Network</span>
-      <h2 class="section-title">Expert Mentors Driving Impact</h2>
-      <p class="section-desc">World-class maritime and technology experts guiding the next generation of BlueTech founders.</p>
-    </div>
-    <div class="grid-3">
-      {% for mentor in site.data.mentors limit:3 %}
-      <div class="mentor-card reveal delay-{{ forloop.index }}">
-        <div class="mentor-avatar">{{ mentor.name | split: ' ' | first | slice: 0 }}{{ mentor.name | split: ' ' | last | slice: 0 }}</div>
-        <h3>{{ mentor.name }}</h3>
-        <div class="mentor-title">{{ mentor.title }}</div>
-        <p class="mentor-bio">{{ mentor.bio }}</p>
-        <div class="mentor-tags">
-          {% for tag in mentor.expertise %}
-          <span class="mentor-tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-        <div class="mentor-social">
-          {% if mentor.linkedin %}<a href="{{ mentor.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">{% include icons.html name="linkedin" size=18 %}</a>{% endif %}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <div style="text-align: center; margin-top: 2.5rem;" class="reveal">
-      <a href="{{ '/ecosystem/mentors/' | relative_url }}" class="btn btn-outline">View All Mentors</a>
+      <span class="section-label">Global Signal</span>
+      <h2 class="section-title" style="text-align:center;">Built in Turkey. Connected Globally.</h2>
+      <p class="section-desc">Headquartered at the crossroads of Europe, the Middle East, and Asia — with mentor and partner reach across three continents.</p>
     </div>
   </div>
 </section>
@@ -201,10 +266,11 @@ title: "Blue Economy Venture Studio | Accelerator | Consulting | Fund"
 <section class="cta-section">
   <div class="container reveal-scale">
     <h2>Ready to Build the Future of the Oceans?</h2>
-    <p>Whether you're a founder, investor, mentor, or partner, there's a place for you in the Mursel ecosystem.</p>
+    <p>Whether you're a founder, investor, or mentor, there's a place for you in the Mursel operating system.</p>
     <div class="cta-actions">
-      <a href="{{ '/apply/' | relative_url }}" class="btn btn-accent btn-lg">Start Your Application</a>
-      <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline btn-lg">Get in Touch</a>
+      <a href="{{ '/apply/#founder' | relative_url }}" class="btn btn-accent btn-lg">Apply as Founder</a>
+      <a href="{{ '/apply/#investor' | relative_url }}" class="btn btn-outline btn-lg">Apply as Investor</a>
+      <a href="{{ '/apply/#mentor' | relative_url }}" class="btn btn-outline btn-lg">Apply as Mentor</a>
     </div>
   </div>
 </section>

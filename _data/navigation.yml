@@ -13,6 +13,8 @@
       url: /programs/consulting/
     - title: Fund
       url: /programs/fund/
+- title: Mursel AI
+  url: /mursel-ai/
 - title: Ecosystem
   url: /ecosystem/
   children:
@@ -24,5 +26,12 @@
   url: /insights/
 - title: Apply
   url: /apply/
+  children:
+    - title: Apply as Founder
+      url: /apply/#founder
+    - title: Apply as Investor
+      url: /apply/#investor
+    - title: Apply as Mentor
+      url: /apply/#mentor
 - title: Contact
   url: /contact/

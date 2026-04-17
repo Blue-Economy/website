@@ -149,21 +149,52 @@ document.addEventListener('DOMContentLoaded', function() {
   var tabs = document.querySelectorAll('.form-tab');
   var panels = document.querySelectorAll('.tab-panel');
 
-  tabs.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      var target = tab.getAttribute('data-tab');
+  function activateTab(tab) {
+    if (!tab) return;
+    var target = tab.getAttribute('data-tab');
+    tabs.forEach(function(t) {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+      t.setAttribute('tabindex', '-1');
+    });
+    panels.forEach(function(p) { p.classList.remove('active'); p.style.display = 'none'; });
+    tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
+    tab.setAttribute('tabindex', '0');
+    var panel = document.getElementById(target);
+    if (panel) {
+      panel.classList.add('active');
+      panel.style.display = 'block';
+    }
+  }
 
-      tabs.forEach(function(t) { t.classList.remove('active'); });
-      panels.forEach(function(p) { p.classList.remove('active'); p.style.display = 'none'; });
-
-      tab.classList.add('active');
-      var panel = document.getElementById(target);
-      if (panel) {
-        panel.classList.add('active');
-        panel.style.display = 'block';
+  tabs.forEach(function(tab, idx) {
+    tab.addEventListener('click', function() { activateTab(tab); });
+    tab.addEventListener('keydown', function(e) {
+      var key = e.key;
+      var next = null;
+      if (key === 'ArrowRight') next = tabs[(idx + 1) % tabs.length];
+      else if (key === 'ArrowLeft') next = tabs[(idx - 1 + tabs.length) % tabs.length];
+      else if (key === 'Home') next = tabs[0];
+      else if (key === 'End') next = tabs[tabs.length - 1];
+      if (next) {
+        e.preventDefault();
+        activateTab(next);
+        next.focus();
       }
     });
   });
+
+  function activateFromHash() {
+    var hash = (window.location.hash || '').replace('#', '');
+    if (!hash) return;
+    var tab = document.querySelector('.form-tab#' + hash);
+    if (tab) activateTab(tab);
+  }
+  if (tabs.length) {
+    activateFromHash();
+    window.addEventListener('hashchange', activateFromHash);
+  }
 
   var stepBtns = document.querySelectorAll('[data-step-next]');
   var stepBackBtns = document.querySelectorAll('[data-step-prev]');

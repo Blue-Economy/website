@@ -1,0 +1,159 @@
+🌊 MURSEL VENTURES — WEBSITE UPDATE SUGGESTIONS
+1. Elevate to Category-Level Positioning
+Your website currently feels like a venture platform (studio/accelerator).
+It should clearly communicate:
+👉 “Blue Economy Operating System”
+
+This must appear in:
+
+Hero section
+First scroll
+About page
+Right now, you are explaining what you do —
+You need to define what you are.
+2. Make the Mentor Network the Hero
+Your strongest asset is not visible enough.
+Instead of:
+
+listing mentors as profiles
+Do:
+position them as core intelligence layer
+Add on homepage:
+“Our strongest asset is not software. It is the network behind it.”
+Show:
+4–6 key mentors
+each with impact lines (not bios)
+3. Make AI a Core Layer (Not Optional)
+Right now AI is either missing or weak.
+You need:
+👉 A dedicated “Mursel AI” layer/page
+
+Explain:
+
+AI = digital twin of mentor network
+what it does for founders:
+learning
+tasks
+matching
+validation
+4. Add “Idea Testing” Entry Point
+Current flow:
+Apply → Build
+Should become:
+👉 Test → Validate → Apply → Build
+
+Add:
+
+“Test Your Idea” button on homepage
+AI validation before application
+This instantly makes you more premium.
+5. Split Apply into 3 Clear Paths
+Right now: single generic apply
+You need:
+
+Apply as Founder
+Apply as Investor
+Apply as Mentor
+Each with:
+different forms
+different messaging
+👉 This improves both clarity and conversion.
+6. Reposition Consulting (CRITICAL)
+Currently:
+👉 looks like a service
+Should be:
+👉 industry access engine
+
+Message should be:
+
+consulting = how you access real problems
+consulting = how startups get pilots
+consulting = how ventures are validated
+7. Strengthen Fund Positioning
+Current:
+“we invest in startups”
+Upgrade to:
+👉 “we invest where we already have conviction through the system”
+Make fund feel like:
+
+output of the system
+not a separate unit
+8. Narrow and Sharpen Focus Areas
+You list too many sectors.
+Reduce to 4–6 strong areas:
+
+Maritime Tech
+Ports & Logistics
+Defense Maritime
+Industrial Maritime Software
+Offshore Systems
+👉 Focus = credibility
+9. Add a Strong “Why Now” Section
+Missing on current site.
+Add:
+
+AI makes knowledge abundant
+Maritime is digitizing
+Supply chains are shifting
+Defense & industrial resilience rising
+👉 This is critical for investors and top founders.
+10. Show the System (Not Just Services)
+Right now:
+Studio / Accelerator / Consulting / Fund = grid
+Add:
+👉 visual system flow
+Example:
+Talent → AI → Mentors → Consulting → Venture → Fund
+
+11. Upgrade Mentor Page (Value-Based)
+Instead of:
+title + bio
+Use:
+“how this person helps”
+Example:
+Opens doors in shipyards
+Solves regulatory bottlenecks
+Enables pilot access
+👉 This makes it premium.
+12. Strengthen Global Signal
+You say global, but it’s not strongly felt.
+Add:
+
+“Built in Turkey. Connected globally.”
+Europe / Middle East / Asia positioning
+13. Add Proof / Traction Layer
+You have stats, but not enough real signals.
+Add:
+
+active founder pipeline
+pilot discussions
+partners
+early ventures
+14. Improve Navigation Structure
+Suggested:
+Home
+About
+Programs
+Ecosystem
+Insights
+Apply
+With subpages:
+Mursel AI
+Mentors
+Founder / Investor / Mentor Apply
+15. Upgrade Accelerator Page (More Execution Detail)
+Add:
+sample milestones
+pilot process
+mentor assignment
+expected outcomes
+Make it feel:
+👉 operator-grade, not marketing
+🔥 PRIORITY ORDER (DO THIS FIRST)
+Operating System positioning
+Mursel AI page
+Multi-path apply system
+Mentor network elevation
+Consulting repositioning
+If you want next:
+👉 I can turn this into a step-by-step implementation checklist for Webflow / Replit (very practical, dev-ready).
