@@ -1,3 +1,260 @@
+# Core Mentors
+
+- name: "Dr. Tahir Conka"
+  title: "Business Development, DEARSAN"
+  expertise:
+    - Defense Maritime
+    - Business Development
+    - Global Partnerships
+  bio: "Leading business development for defense maritime projects and global project development at DEARSAN."
+  linkedin: "https://www.linkedin.com/in/tahirconka/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Erhan Apak"
+  title: "Shipbuilding & Industrial Operations"
+  expertise:
+    - Shipbuilding
+    - Shipyard Operations
+    - Execution Systems
+  bio: "Expert in shipyard operations and execution systems with deep industrial operations experience."
+  linkedin: "https://www.linkedin.com/in/erhan-apak-428b60163"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Kozan Erkan"
+  title: "Maritime Strategy & Logistics"
+  expertise:
+    - Maritime Strategy
+    - Trade Flows
+    - Logistics Systems
+  bio: "Specialist in trade flows, maritime operations, and logistics systems."
+  linkedin: "https://www.linkedin.com/in/kozan-s-erkan-1051194a/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Prof. Dr. Capt. Taner Albayrak"
+  title: "Naval Architecture & Maritime Systems"
+  expertise:
+    - Naval Architecture
+    - Maritime Education
+    - Applied Maritime Systems
+  bio: "Professor and captain with deep expertise in naval architecture and applied maritime systems."
+  linkedin: "https://www.linkedin.com/in/prof-dr-capt-taner-albayrak-33348322/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Prof. Dr. Taner Berksoy"
+  title: "Economics & Policy"
+  expertise:
+    - Macroeconomics
+    - Policy Frameworks
+    - Maritime Strategy
+  bio: "Professor of economics providing macro strategy, economics, and policy framework expertise."
+  linkedin: "https://www.pirireis.edu.tr/prof-dr-taner-berksoy-2"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Prof. Dr. (E) Amiral Nurhan Kahyaoğlu"
+  title: "Naval Strategy & Defense"
+  expertise:
+    - Naval Strategy
+    - Defense Advisory
+    - Naval Operations
+  bio: "Retired Admiral with high-level naval operations and strategic defense advisory experience."
+  linkedin: "https://www.linkedin.com/in/nurhan-k%C3%A2hyao%C4%9Flu-a039a081/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Sena Nomak"
+  title: "Founder, YKSN | Marine Engineer"
+  expertise:
+    - Marine Engineering
+    - Startup Founding
+    - Maritime Innovation
+  bio: "Marine engineer and founder of YKSN, focused on ecosystem building and maritime innovation."
+  linkedin: "https://www.linkedin.com/in/senanomak/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Dr. Burkay Alan"
+  title: "Founder, Asartech A.Ş."
+  expertise:
+    - Electrical Engineering
+    - Electronics
+    - Deep Tech Systems
+  bio: "Founder of Asartech with expertise in electrical & electronics engineering and deep tech systems."
+  linkedin: "https://www.linkedin.com/in/burkayalan/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Kadir Demir"
+  title: "Founder, Viya LLC | Germany"
+  expertise:
+    - Port & Logistics Infrastructure
+    - International Operations
+    - European Market
+  bio: "Founder of Viya LLC helping ventures scale port and logistics infrastructure internationally."
+  linkedin: "https://www.linkedin.com/in/kadir-demir-a159ba87/"
+  availability: "Monthly"
+  languages: ["TR", "EN", "DE"]
+
+- name: "Semih Zorlu"
+  title: "Founder, SEFT Engineering"
+  expertise:
+    - Industrial Engineering
+    - Scaling Systems
+    - Operations
+  bio: "Founder at SEFT Engineering specializing in industrial engineering and scaling systems."
+  linkedin: "https://www.linkedin.com/in/semih-zorlu-5682588/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Ferdi Çiçek"
+  title: "Founder, SEFT Engineering"
+  expertise:
+    - Engineering Execution
+    - Operations
+    - Industrial Systems
+  bio: "Co-founder at SEFT Engineering with expertise in execution-heavy engineering and operations."
+  linkedin: "https://www.linkedin.com/in/ferdi-%C3%A7i%C3%A7ek-74547a22/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Taylan Karakaya"
+  title: "Founder, SEFT Design"
+  expertise:
+    - Design
+    - Technical Systems Integration
+    - Product Development
+  bio: "Co-founder at SEFT Design focused on design and technical systems integration."
+  linkedin: "https://www.linkedin.com/in/taylan-karakaya-71b20b20/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Emrah Sağıroğlu"
+  title: "Founder, SEFT Engineering"
+  expertise:
+    - Engineering
+    - Applied Systems
+    - Operations
+  bio: "Co-founder at SEFT Engineering with applied systems and engineering operations expertise."
+  linkedin: "https://www.linkedin.com/in/mehmet-emrah-sa%C4%9Firo%C4%9Flu-30204b238/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Deniz Mehmet Irak"
+  title: "ASFAT"
+  expertise:
+    - Defense Maritime
+    - Industrial Operations
+    - Project Management
+  bio: "Expert in defense maritime and industrial operations at ASFAT."
+  linkedin: "https://www.linkedin.com/in/deniz-mehmet-irak-4a14446b/"
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+- name: "Dr. Tarık Var"
+  title: "GM, İstanbul Shipyard"
+  expertise:
+    - Shipyard Leadership
+    - Engineering Execution
+    - Naval Industry
+  bio: "General Manager of İstanbul Shipyard with deep shipyard leadership and engineering execution expertise."
+  linkedin: "https://www.linkedin.com/in/tar%C4%B1k-var-a6477658/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Sinan Topuz"
+  title: "ASFAT – Pakistan Business Development"
+  expertise:
+    - B2B Sales
+    - Defense Sales
+    - International Expansion
+  bio: "Business development specialist at ASFAT focusing on B2B, defense sales, and international expansion."
+  linkedin: ""
+  availability: "Monthly"
+  languages: ["TR", "EN"]
+
+# Extended / Additional Mentors
+
+- name: "Şenol Kaptan"
+  title: "Director, House of Human | ROV Systems"
+  expertise:
+    - ROV Systems
+    - Underwater Technology
+    - Operations
+  bio: "Director at House of Human specializing in ROV systems and underwater technology."
+  linkedin: "https://www.linkedin.com/in/%C5%9Fenol-kaptan-b7b617b2/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Önal Koyluç"
+  title: "Industrial & Maritime Advisory"
+  expertise:
+    - Industrial Advisory
+    - Maritime Operations
+    - Strategy
+  bio: "Advisor with expertise in industrial and maritime advisory roles."
+  linkedin: "https://www.linkedin.com/in/%C3%B6nal-koyluc-130a3b90/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Haluk Çoban"
+  title: "Industrial Systems & Engineering"
+  expertise:
+    - Industrial Systems
+    - Engineering
+    - Operations
+  bio: "Expert in industrial systems and engineering with broad operational experience."
+  linkedin: "https://www.linkedin.com/in/haluk-coban/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Berna Korkmaz"
+  title: "Business & Ecosystem"
+  expertise:
+    - Business Development
+    - Ecosystem Building
+    - Strategy
+  bio: "Business and ecosystem specialist supporting venture growth and partnership development."
+  linkedin: "https://www.linkedin.com/in/berna-korkmaz-00456266/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Emek Gökkaya"
+  title: "Engineering & Operations"
+  expertise:
+    - Engineering
+    - Operations
+    - Process Optimization
+  bio: "Engineering and operations expert with experience in process optimization."
+  linkedin: "https://www.linkedin.com/in/emek-gokkaya-12182817/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Memet Yazıcı"
+  title: "Industry & Strategy"
+  expertise:
+    - Industry Strategy
+    - Operations
+    - Business Development
+  bio: "Industry and strategy advisor with a broad background in operations and business development."
+  linkedin: "https://www.linkedin.com/in/memetyazici/"
+  availability: "Quarterly"
+  languages: ["TR", "EN"]
+
+- name: "Guillaume Lauzier"
+  title: "Venture Builder & Startup Operator"
+  expertise:
+    - Venture Building
+    - Startup Operations
+    - International Growth
+  bio: "Experienced venture builder and startup operator focused on international growth and ecosystem development."
+  linkedin: "https://www.linkedin.com/in/guillaumelauzier/"
+  availability: "Monthly"
+  languages: ["EN", "FR"]
+
 - name: "Ilkay Aydin"
   title: "Maritime Strategy Expert"
   expertise:
@@ -6,49 +263,5 @@
     - Regulatory
   bio: "20+ years in maritime strategy and business development across Turkey and EMEA."
   linkedin: "https://linkedin.com/in/ilkayaydin"
-  availability: "Monthly"
-  languages: ["TR", "EN"]
-
-- name: "Sena Nomak"
-  title: "Founder, YKSN | Marine Engineer"
-  expertise:
-    - Marine Engineering
-    - Startup Founding
-    - Women in Tech
-  bio: "Marine engineer and founder of YKSN, focused on sustainable maritime solutions."
-  linkedin: "https://linkedin.com/in/senanomak"
-  availability: "Quarterly"
-  languages: ["TR", "EN"]
-
-- name: "Kadir Demir"
-  title: "Founder, Viya LLC | Germany"
-  expertise:
-    - International Expansion
-    - B2B Sales
-    - European Market
-  bio: "Serial entrepreneur helping Turkish startups scale in European markets."
-  linkedin: "https://linkedin.com/in/kadir-demir-a159ba87"
-  availability: "Monthly"
-  languages: ["TR", "EN", "DE"]
-
-- name: "Prof. Dr. Capt. Taner Albayrak"
-  title: "Maritime Academic & Industry Leader"
-  expertise:
-    - Naval Architecture
-    - Maritime Education
-    - Safety Standards
-  bio: "Professor and captain with deep expertise in maritime education and regulatory frameworks."
-  linkedin: "https://linkedin.com/in/prof-dr-capt-taner-albayrak-33348322"
-  availability: "Quarterly"
-  languages: ["TR", "EN"]
-
-- name: "Dr. Tahir Conka"
-  title: "Business Development, DEARSAN"
-  expertise:
-    - Defense Maritime
-    - Business Development
-    - Government Relations
-  bio: "Leading business development for defense maritime projects with global partnerships."
-  linkedin: "https://linkedin.com/in/tahirconka"
   availability: "Monthly"
   languages: ["TR", "EN"]
